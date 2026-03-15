@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--typeface), sans-serif;
+  color: var(--dark-color);
+}
+
+a {
+  text-decoration: none;
+  position: relative;
+  color: var(--dark-color);
+  display: block;
+}
+
+a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: currentColor;
+  transition: width 0.3s ease;
+}
+
+a:hover::after {
+  width: 100%;
+}
+
+:root {
+
+  /*TYPOGRAPHY*/
+  --typeface: 'HelveticaNeue';
+
+  --headline: 700 8.5vw/calc(1em - 0.25vw) var(--typeface), sans-serif;
+  --header-1: 700 7vw/calc(1em - 0.25vw) var(--typeface), sans-serif;
+  --header-2: 700 3rem/50px var(--typeface), sans-serif;
+  --header-3: 700 2rem var(--typeface), sans-serif;
+
+  --body-bold: 700 1rem var(--typeface), sans-serif;
+  --body-regular: 400 1rem var(--typeface), sans-serif;
+
+  /*COLOR*/
+  --primary-color: blue;
+  --dark-color: #272727;
+  --light-color: #FBFBFB;
+}
+
+@media screen and (max-width: 900px) {
+  :root {
+    --headline: 700 10vw/calc(1em - 0.25vw) var(--typeface), sans-serif;
+    --header-1: 700 7.5vw/calc(1em - 0.25vw) var(--typeface), sans-serif;
+    --header-3: 700 2rem var(--typeface), sans-serif;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  :root {
+    --headline: 700 10vw/calc(1em) var(--typeface), sans-serif;
+    --header-2: 700 1.5rem/25px var(--typeface), sans-serif;
+    --header-3: 700 1.2rem var(--typeface), sans-serif;
+
+    --body-bold: 700 0.7rem var(--typeface), sans-serif;
+    --body-regular: 400 0.7rem var(--typeface), sans-serif;
+  }
+
+  body {
+    padding-top: 1rem;
+  }
+}
