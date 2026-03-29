@@ -33,7 +33,8 @@ h1 {
   font: var(--headline);
   color: var(--primary-color);
   padding-left: 1rem;
-  margin-bottom: 11rem;
+  margin-bottom: 10.5rem;
+  margin-top: 0.5rem;
 }
 
 section {

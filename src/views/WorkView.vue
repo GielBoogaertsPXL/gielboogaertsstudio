@@ -18,7 +18,7 @@
       </div>
       <div class="second">
         <RouterLink to="/eopa">
-          <img src="@/assets/work/eopa/covers.webp" alt="">
+          <img id="eopa" src="@/assets/work/eopa/covers.webp" alt="">
           <div class="text"><span>ENCYCLOPEDIA OF PHONETIC ALPHABETS</span><span>2025</span></div>
         </RouterLink>
       </div>
@@ -58,7 +58,8 @@ h1 {
   font: var(--headline);
   color: var(--primary-color);
   padding-left: 1rem;
-  margin-bottom: 11rem;
+  margin-bottom: 10.5rem;
+  margin-top: 0.5rem;
 }
 
 span {
@@ -145,6 +146,49 @@ section {
 
 .fifth img {
   width: 100%;
+}
+
+@media screen and (max-width: 550px) {
+  .first {
+    flex-direction: column;
+    width: 100%;
+    gap: 15vw;
+  }
+
+  .first a {
+    width: 100%;
+  }
+
+  #eopa {
+    content:url("@/assets/work/eopa/covers_vertical.webp");
+  }
+
+  .third {
+    flex-direction: column;
+    gap: 15vw;
+  }
+
+  .third a:nth-child(1) {
+    width: 100%;
+  }
+
+  .third a:nth-child(2) {
+    width: 100%;
+  }
+
+  .fourth {
+    flex-direction: column;
+    gap: 15vw;
+  }
+
+  .fourth a {
+    width: 100%;
+  }
+
+  .fifth a {
+    width: 100%;
+    left: 0;
+  }
 }
 
 </style>
