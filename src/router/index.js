@@ -54,6 +54,11 @@ const router = createRouter({
       component: () => import('@/views/projects/ProjectArchetype.vue'),
     },
     {
+      path: '/paa',
+      name: 'paa',
+      component: () => import('@/views/projects/ProjectPAA.vue'),
+    },
+    {
       path: '/dashboard',
       name: 'dashboard',
       component: () => import('@/views/projects/ProjectDashboard.vue'),

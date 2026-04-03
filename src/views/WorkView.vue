@@ -43,6 +43,12 @@
         </RouterLink>
       </div>
       <div class="fifth">
+        <RouterLink to="/paa">
+          <img src="@/assets/work/dashboard/Dashboard_information.webp" alt="">
+          <div class="text"><span>THE PHONETIC ALPHABET ARCHIVE</span><span>2026</span></div>
+        </RouterLink>
+      </div>
+      <div class="first">
         <RouterLink to="/dashboard">
           <img src="@/assets/work/dashboard/Dashboard_information.webp" alt="">
           <div class="text"><span>DASHBOARD</span><span>2025</span></div>
