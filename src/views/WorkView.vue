@@ -44,7 +44,7 @@
       </div>
       <div class="fifth">
         <RouterLink to="/paa">
-          <img src="@/assets/work/dashboard/Dashboard_information.webp" alt="">
+          <img src="@/assets/work/phoneticalphabet/PAA_homepage.webp" alt="">
           <div class="text"><span>THE PHONETIC ALPHABET ARCHIVE</span><span>2026</span></div>
         </RouterLink>
       </div>
