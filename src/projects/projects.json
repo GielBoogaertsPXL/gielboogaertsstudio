@@ -53,7 +53,7 @@
       { "type": "image", "src": "/work/eopa/COC_cover.webp", "position": "second" },
       { "type": "image", "src": "/work/eopa/COC_content.webp", "position": "first" },
       { "type": "image", "src": "/work/eopa/COC_spread.webp", "position": "fourth" },
-      { "type": "text", "value": "Encyclopedia and catalogues" },
+      { "type": "text", "value": "Encyclopedia & catalogues" },
       { "type": "image", "src": "/work/eopa/COV_cover.webp", "position": "third" },
       { "type": "image", "src": "/work/eopa/COV_content.webp", "position": "fifth" },
       { "type": "image", "src": "/work/eopa/COV_spread.webp", "position": "fourth" }
@@ -71,8 +71,8 @@
       { "type": "image", "src": "/work/typeinterplay/TIP_cover.webp", "position": "second" },
       { "type": "text", "value": "Based on cursus \"Letterzetten, Chapter 17\"", "italic": "Letterzetten, Chapter 17" },
       { "type": "image", "src": "/work/typeinterplay/TIP_content.webp", "position": "third" },
-      { "type": "text", "value": "Poster, magazine / booklet & addendum" },
       { "type": "image", "src": "/work/typeinterplay/TIP_titlepage.webp", "position": "fourth" },
+      { "type": "text", "value": "Navigation on the outside of the book" },
       { "type": "image", "src": "/work/typeinterplay/TIP_keywords.webp", "position": "fifth" },
       { "type": "image", "src": "/work/typeinterplay/TIP_spread03.webp", "position": "second" },
       { "type": "image", "src": "/work/typeinterplay/TIP_images.webp", "position": "fourth" }
