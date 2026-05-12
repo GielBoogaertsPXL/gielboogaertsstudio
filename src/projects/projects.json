@@ -125,14 +125,23 @@
     ]
   },
   {
-    "id": "dashboard",
-    "title": "DASHBOARD",
-    "cover": "/work/dashboard/Dashboard_information.webp",
-    "titleLines": ["DASHBOARD"],
-    "description": "Curriculum Vitae dashboard",
-    "year": "2025",
+    "id": "phoneticalphabet",
+    "title": "PHONETIC ALPHABET ARCHIVE",
+    "cover": "/work/phoneticalphabet/PAA_homepage1.webp",
+    "titleLines": ["PHONETIC ALPHABET ARCHIVE"],
+    "description": "Digitalization of EOPA",
+    "year": "2026",
+    "link": { "href": "https://phoneticalphabetarchive.netlify.app", "label": "Go to website" },
     "content": [
-      { "type": "image", "src": "/work/dashboard/Dashboard_information.webp", "position": "center" }
+      { "type": "image", "src": "/work/phoneticalphabet/PAA_homepage1.webp", "position": "first" },
+      { "type": "image", "src": "/work/phoneticalphabet/PAA_homepage2.webp", "position": "second" },
+      { "type": "text", "value": "Archive of phonetic alphabets" },
+      { "type": "image", "src": "/work/phoneticalphabet/PAA_detailpage1.webp", "position": "third" },
+      { "type": "image", "src": "/work/phoneticalphabet/PAA_detailpage2.webp", "position": "fourth" },
+      { "type": "text", "value": "Full character sets" },
+      { "type": "image", "src": "/work/phoneticalphabet/PAA_detailpage3.webp", "position": "fifth" },
+      { "type": "image", "src": "/work/phoneticalphabet/PAA_detailpage4.webp", "position": "first" },
+      { "type": "text", "value": "*Under development*" }
     ]
   }
 ]

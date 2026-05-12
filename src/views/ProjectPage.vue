@@ -53,9 +53,19 @@
           v-if="project.downloadPdf"
           :href="project.downloadPdf.href"
           target="_blank"
-          class="download"
+          class="link"
       >
         {{ project.downloadPdf.label }}
+      </a>
+
+      <!-- OPTIONAL LINK (placed logically at end) -->
+      <a
+          v-if="project.link"
+          :href="project.link.href"
+          target="_blank"
+          class="link"
+      >
+        {{ project.link.label }}
       </a>
 
     </section>
@@ -136,9 +146,12 @@ img {
   width: 45%;
 }
 
-.download {
-  width: fit-content;
+.link {
   align-self: center;
+  background: var(--primary-color);
+  color: white;
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
 }
 
 .first {

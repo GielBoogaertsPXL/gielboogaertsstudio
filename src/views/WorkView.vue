@@ -76,11 +76,11 @@ const projectMap = Object.fromEntries(
       </div>
 
       <div class="fifth">
-        <RouterLink :to="`/projects/${projectMap.dashboard.id}`">
-          <img :src="projectMap.dashboard.cover" />
+        <RouterLink :to="`/projects/${projectMap.phoneticalphabet.id}`">
+          <img :src="projectMap.phoneticalphabet.cover" />
           <div class="text">
-            <span>{{ projectMap.dashboard.title }}</span>
-            <span>{{ projectMap.dashboard.year }}</span>
+            <span>{{ projectMap.phoneticalphabet.title }}</span>
+            <span>{{ projectMap.phoneticalphabet.year }}</span>
           </div>
         </RouterLink>
       </div>
