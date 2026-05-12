@@ -162,6 +162,10 @@ img {
     width: 80%;
   }
 
+  .third {
+    margin-left: 15vw;
+  }
+
   .fourth {
     margin-left: 18vw;
   }
