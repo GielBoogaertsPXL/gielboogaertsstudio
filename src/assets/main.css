@@ -9,14 +9,14 @@ body {
   color: var(--dark-color);
 }
 
-a {
+a, button {
   text-decoration: none;
   position: relative;
   color: var(--dark-color);
   display: block;
 }
 
-a::after {
+a::after, button::after {
   content: '';
   position: absolute;
   bottom: -2px;
@@ -27,7 +27,7 @@ a::after {
   transition: width 0.3s ease;
 }
 
-a:hover::after {
+a:hover::after, button:hover::after {
   width: 100%;
 }
 

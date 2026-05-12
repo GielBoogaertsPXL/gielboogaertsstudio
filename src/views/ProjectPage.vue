@@ -142,7 +142,7 @@ img {
 }
 
 .first {
-  margin-left: 5vw;
+  margin-left: 15vw;
 }
 
 .second {
@@ -150,7 +150,7 @@ img {
 }
 
 .third {
-  margin-left: 15vw;
+  margin-left: 30vw;
 }
 
 .fourth {

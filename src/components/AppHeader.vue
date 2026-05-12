@@ -6,92 +6,97 @@ const menuOpen = ref(false)
 
 <template>
   <header>
-    <button class="hamburger" @click="menuOpen = !menuOpen" :class="{ open: menuOpen }">
-      <span></span>
-      <span></span>
-      <span></span>
+    <button class="menu-btn" @click="menuOpen = !menuOpen" :class="{ open: menuOpen }">
+      <span>{{ menuOpen ? 'CLOSE' : 'MENU' }}</span>
     </button>
-    <nav :class="{ open: menuOpen }">
-      <RouterLink to="/" @click="menuOpen = false">Home</RouterLink>
-      <RouterLink to="/work" @click="menuOpen = false">Work</RouterLink>
-      <RouterLink to="/about" @click="menuOpen = false">About</RouterLink>
-    </nav>
+
+    <Transition name="overlay">
+      <div class="overlay" v-if="menuOpen">
+        <nav>
+          <RouterLink :to="{ name: 'home' }" @click="menuOpen = false">HOME</RouterLink>
+          <RouterLink :to="{ name: 'work' }" @click="menuOpen = false">WORK</RouterLink>
+          <RouterLink :to="{ name: 'about' }" @click="menuOpen = false">ABOUT</RouterLink>
+        </nav>
+        <img src="@/assets/img/logo.svg" alt="gielboogaertsstudio logo">
+      </div>
+    </Transition>
   </header>
 </template>
 
 <style scoped>
 header {
-  display: flex;
-  flex-direction: column;
   width: 100%;
   position: fixed;
   top: 0;
   right: 0;
   padding: 0.5rem 1rem 0 0;
   z-index: 100;
-}
-
-nav {
   display: flex;
-  flex-direction: column;
-  align-items: end;
-  align-self: end;
+  justify-content: flex-end;
 }
 
-a {
-  text-decoration: none;
+nav a {
+  font: var(--headline);
+}
+
+.menu-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 200;
+  position: relative;
+  padding-top: 0.25rem;
+}
+
+.menu-btn span {
   font: var(--header-2);
   color: var(--dark-color);
   mix-blend-mode: screen;
 }
 
-a::after {
-  height: 4px;
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: white;
+  z-index: 150;
+  display: flex;
+  justify-content: space-between;
 }
 
-.hamburger {
-  display: none;
+.overlay img {
+  width: 20vw;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  align-self: flex-end;
+}
+
+nav {
+  margin-bottom: 2rem;
+  margin-left: 1rem;
+  display: flex;
   flex-direction: column;
-  gap: 5px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding-top: 0.5rem;
-  align-self: end;
+  justify-content: center;
 }
 
-.hamburger span {
-  display: block;
-  width: 2rem;
-  height: 4px;
-  background: var(--dark-color);
-  transition: all 0.3s ease;
+/* Overlay transition */
+.overlay-enter-active,
+.overlay-leave-active {
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-.hamburger.open span:nth-child(1) {
-  transform: translateY(9px) rotate(45deg);
-}
-
-.hamburger.open span:nth-child(2) {
+.overlay-enter-from {
   opacity: 0;
+  transform: translateY(-8px);
 }
 
-.hamburger.open span:nth-child(3) {
-  transform: translateY(-9px) rotate(-45deg);
-  margin-bottom: 0.2rem;
+.overlay-leave-to {
+  opacity: 0;
+  transform: translateY(-8px);
 }
 
-@media screen and (max-width: 900px) {
-  .hamburger {
-    display: flex;
-  }
-
-  nav {
-    display: none;
-  }
-
-  nav.open {
-    display: flex;
+@media screen and (max-width: 450px) {
+  nav a {
+    font-size: 4rem;
   }
 }
 </style>

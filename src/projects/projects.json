@@ -46,6 +46,7 @@
     "content": [
       { "type": "image", "src": "/work/eopa/EOPA_cover.webp", "position": "first" },
       { "type": "image", "src": "/work/eopa/EOPA_content.webp", "position": "second" },
+      { "type": "text", "value": "3700+ graphemes & 51 phonetic alphabets" },
       { "type": "image", "src": "/work/eopa/EOPA_spread1.webp", "position": "third" },
       { "type": "image", "src": "/work/eopa/EOPA_spread2.webp", "position": "fourth" },
       { "type": "image", "src": "/work/eopa/EOPA_spread3.webp", "position": "fifth" },
