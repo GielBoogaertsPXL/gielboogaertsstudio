@@ -1,13 +1,20 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 
+const emit = defineEmits(['done'])
 const visible = ref(true)
 
 onMounted(() => {
+  document.body.style.overflow = 'hidden'
+
   window.addEventListener('load', () => {
     setTimeout(() => {
       visible.value = false
-    }, 2000)
+      setTimeout(() => {
+        emit('done')
+        document.body.style.overflow = ''
+      }, 1000)
+    }, 1000)
   })
 })
 </script>

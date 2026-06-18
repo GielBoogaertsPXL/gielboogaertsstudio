@@ -8,7 +8,6 @@ import { computed } from "vue";
 import { useI18n } from "vue-i18n";
 import { useHead } from '@unhead/vue'
 
-
 const { locale } = useI18n()
 
 useHead({
@@ -21,8 +20,8 @@ useHead({
 <template>
   <div id="app">
     <AppLoader />
-    <AppHeader/>
-    <RouterView/>
+    <AppHeader />
+    <RouterView />
     <AppFooter />
     <AppTag />
   </div>

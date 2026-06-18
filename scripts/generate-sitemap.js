@@ -4,14 +4,16 @@ const urls = [
     '/',
     '/work',
     '/about',
-    '/projects/microtype',
-    '/projects/jumbledscript',
-    '/projects/eopa',
-    '/projects/typeinterplay',
-    '/projects/virgajesse',
-    '/projects/enzomari',
-    '/projects/archetype',
-    '/projects/phoneticalphabet'
+    '/work/microtype',
+    '/work/jumbledscript',
+    '/work/eopa',
+    '/work/typeinterplay',
+    '/work/virgajesse',
+    '/work/enzomari',
+    '/work/archetype',
+    '/work/phoneticalphabet',
+    '/work/hybridpublishing',
+    '/work/immohabits'
 ]
 
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>

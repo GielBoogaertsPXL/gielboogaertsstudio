@@ -2,146 +2,809 @@
   {
     "id": "microtype",
     "title": "MICROTYPE",
-    "cover": "/work/microtype/MT_booklet&poster1.webp",
-    "titleLines": ["MICROTYPE"],
-    "description": "Publication for navigating between poster and booklet",
+    "cover": "/images/microtype/MT_booklet&poster1.webp",
+    "titleLines": [
+      "MICROTYPE"
+    ],
+    "description": {
+      "en": "Publication for navigating between poster and booklet",
+      "nl": "Publicatie voor navigatie tussen poster en boekje"
+    },
     "year": "2022",
     "content": [
-      { "type": "image", "src": "/work/microtype/MT_booklet&poster1.webp", "position": "first", "alt": "Microtype booklet and poster side by side", "altKey": "microtype_img1" },
-      { "type": "image", "src": "/work/microtype/MT_cover.webp", "position": "second", "alt": "Microtype booklet cover", "altKey": "microtype_img2" },
-      { "type": "text", "value": "Based on artikel \"Had de koning schoenmaat 49?\" by Martin Majoor", "italic": "Had de koning schoenmaat 49?", "key": "microtype_source" },
-      { "type": "image", "src": "/work/microtype/MT_spread1.webp", "position": "third", "alt": "Microtype inner spread", "altKey": "microtype_img3" },
-      { "type": "image", "src": "/work/microtype/MT_booklet&poster2.webp", "position": "fourth", "alt": "Microtype booklet and poster detail", "altKey": "microtype_img4" },
-      { "type": "image", "src": "/work/microtype/MT_poster.webp", "position": "fifth", "alt": "Microtype poster", "altKey": "microtype_img5" },
-      { "type": "image", "src": "/work/microtype/MT_spread2.webp", "position": "second", "alt": "Microtype second inner spread", "altKey": "microtype_img6" }
+      {
+        "type": "image",
+        "src": "/images/microtype/MT_booklet&poster1.webp",
+        "position": "first",
+        "alt": {
+          "en": "Microtype booklet and poster side by side",
+          "nl": "Microtype boekje en poster naast elkaar"
+        }
+      },
+      {
+        "type": "image",
+        "src": "/images/microtype/MT_cover.webp",
+        "position": "second",
+        "alt": {
+          "en": "Microtype booklet cover",
+          "nl": "Microtype boekje omslag"
+        }
+      },
+      {
+        "type": "text",
+        "en": "Based on article \"Had de koning schoenmaat 49?\" by Martin Majoor",
+        "nl": "Gebaseerd op het artikel \"Had de koning schoenmaat 49?\" van Martin Majoor"
+      },
+      {
+        "type": "image",
+        "src": "/images/microtype/MT_spread1.webp",
+        "position": "third",
+        "alt": {
+          "en": "Microtype inner spread",
+          "nl": "Microtype binnenpagina"
+        }
+      },
+      {
+        "type": "image",
+        "src": "/images/microtype/MT_booklet&poster2.webp",
+        "position": "fourth",
+        "alt": {
+          "en": "Microtype booklet and poster detail",
+          "nl": "Microtype boekje en poster detail"
+        }
+      },
+      {
+        "type": "image",
+        "src": "/images/microtype/MT_poster.webp",
+        "position": "fifth",
+        "alt": {
+          "en": "Microtype poster",
+          "nl": "Microtype poster"
+        }
+      },
+      {
+        "type": "image",
+        "src": "/images/microtype/MT_spread2.webp",
+        "position": "second",
+        "alt": {
+          "en": "Microtype second inner spread",
+          "nl": "Microtype tweede binnenpagina"
+        }
+      }
     ]
   },
   {
     "id": "jumbledscript",
     "title": "JUMBLED SCRIPT",
-    "cover": "/work/jumbledscript/JS_spread1.webp",
-    "titleLines": ["JUMBLED SCRIPT"],
-    "description": "Bachelor project on visualizing dyslexia",
+    "cover": "/images/jumbledscript/JS_spread1.webp",
+    "titleLines": [
+      "JUMBLED SCRIPT"
+    ],
+    "description": {
+      "en": "Bachelor project on visualizing dyslexia",
+      "nl": "Bachelorproject over het visualiseren van dyslexie"
+    },
     "year": "2024",
     "content": [
-      { "type": "image", "src": "/work/jumbledscript/JS_spread1.webp", "position": "first", "alt": "Jumbled Script book spread", "altKey": "jumbledscript_img1" },
-      { "type": "image", "src": "/work/jumbledscript/JS_cover.webp", "position": "second", "alt": "Jumbled Script book cover", "altKey": "jumbledscript_img2" },
-      { "type": "image", "src": "/work/jumbledscript/JS_poster1.webp", "position": "third", "alt": "Jumbled Script first poster", "altKey": "jumbledscript_img3" },
-      { "type": "text", "value": "Book & posters", "key": "bookAndPosters" },
-      { "type": "image", "src": "/work/jumbledscript/JS_explanation.webp", "position": "fourth", "alt": "Jumbled Script explanation page", "altKey": "jumbledscript_img4" },
-      { "type": "image", "src": "/work/jumbledscript/JS_spread3.webp", "position": "fifth", "alt": "Jumbled Script third book spread", "altKey": "jumbledscript_img5" },
-      { "type": "image", "src": "/work/jumbledscript/JS_poster2.webp", "position": "second", "alt": "Jumbled Script second poster", "altKey": "jumbledscript_img6" },
-      { "type": "image", "src": "/work/jumbledscript/JS_index.webp", "position": "fourth", "alt": "Jumbled Script index page", "altKey": "jumbledscript_img7" },
-      { "type": "image", "src": "/work/jumbledscript/JS_poster3.webp", "position": "fifth", "alt": "Jumbled Script third poster", "altKey": "jumbledscript_img8" }
+      {
+        "type": "image",
+        "src": "/images/jumbledscript/JS_spread1.webp",
+        "position": "first",
+        "alt": {
+          "en": "Jumbled Script book spread",
+          "nl": "Jumbled Script boekpagina"
+        }
+      },
+      {
+        "type": "image",
+        "src": "/images/jumbledscript/JS_cover.webp",
+        "position": "second",
+        "alt": {
+          "en": "Jumbled Script book cover",
+          "nl": "Jumbled Script boek omslag"
+        }
+      },
+      {
+        "type": "image",
+        "src": "/images/jumbledscript/JS_poster1.webp",
+        "position": "third",
+        "alt": {
+          "en": "Jumbled Script first poster",
+          "nl": "Jumbled Script eerste poster"
+        }
+      },
+      {
+        "type": "text",
+        "en": "Book & posters",
+        "nl": "Boek & posters"
+      },
+      {
+        "type": "image",
+        "src": "/images/jumbledscript/JS_explanation.webp",
+        "position": "fourth",
+        "alt": {
+          "en": "Jumbled Script explanation page",
+          "nl": "Jumbled Script uitlegpagina"
+        }
+      },
+      {
+        "type": "image",
+        "src": "/images/jumbledscript/JS_spread3.webp",
+        "position": "fifth",
+        "alt": {
+          "en": "Jumbled Script third book spread",
+          "nl": "Jumbled Script derde boekpagina"
+        }
+      },
+      {
+        "type": "image",
+        "src": "/images/jumbledscript/JS_poster2.webp",
+        "position": "second",
+        "alt": {
+          "en": "Jumbled Script second poster",
+          "nl": "Jumbled Script tweede poster"
+        }
+      },
+      {
+        "type": "image",
+        "src": "/images/jumbledscript/JS_index.webp",
+        "position": "fourth",
+        "alt": {
+          "en": "Jumbled Script index page",
+          "nl": "Jumbled Script indexpagina"
+        }
+      },
+      {
+        "type": "image",
+        "src": "/images/jumbledscript/JS_poster3.webp",
+        "position": "fifth",
+        "alt": {
+          "en": "Jumbled Script third poster",
+          "nl": "Jumbled Script derde poster"
+        }
+      }
     ]
   },
   {
     "id": "eopa",
     "title": "ENCYCLOPEDIA OF PHONETIC ALPHABETS",
-    "cover": "/work/eopa/covers.webp",
-    "titleLines": ["ENCYCLOPEDIA OF", "PHONETIC", "ALPHABETS"],
-    "description": "Master project on documenting phonetic alphabets",
+    "cover": "/images/eopa/covers.webp",
+    "titleLines": [
+      "ENCYCLOPEDIA OF",
+      "PHONETIC",
+      "ALPHABETS"
+    ],
+    "description": {
+      "en": "Master project on documenting phonetic alphabets",
+      "nl": "Masterproject over het documenteren van fonetische alfabetten"
+    },
     "year": "2025",
-    "downloadPdf": { "href": "/EOPA_thesis_GielBoogaerts.pdf", "label": "Download thesis" },
+    "downloadPdf": {
+      "href": "/EOPA_thesis_GielBoogaerts.pdf",
+      "label": {
+        "en": "Download thesis",
+        "nl": "Thesis downloaden"
+      }
+    },
     "content": [
-      { "type": "image", "src": "/work/eopa/EOPA_cover.webp", "position": "first", "alt": "Encyclopedia of Phonetic Alphabets cover", "altKey": "eopa_img1" },
-      { "type": "image", "src": "/work/eopa/EOPA_content.webp", "position": "second", "alt": "Encyclopedia of Phonetic Alphabets content page", "altKey": "eopa_img2" },
-      { "type": "text", "value": "3700+ graphemes & 51 phonetic alphabets", "key": "eopa_graphemes" },
-      { "type": "image", "src": "/work/eopa/EOPA_spread1.webp", "position": "third", "alt": "Encyclopedia of Phonetic Alphabets first spread", "altKey": "eopa_img3" },
-      { "type": "image", "src": "/work/eopa/EOPA_spread2.webp", "position": "fourth", "alt": "Encyclopedia of Phonetic Alphabets second spread", "altKey": "eopa_img4" },
-      { "type": "image", "src": "/work/eopa/EOPA_spread3.webp", "position": "fifth", "alt": "Encyclopedia of Phonetic Alphabets third spread", "altKey": "eopa_img5" },
-      { "type": "text", "value": "Triple book series", "key": "tripleBookSeries" },
-      { "type": "image", "src": "/work/eopa/COC_cover.webp", "position": "second", "alt": "Catalogue of Characters cover", "altKey": "eopa_img6" },
-      { "type": "image", "src": "/work/eopa/COC_content.webp", "position": "first", "alt": "Catalogue of Characters content page", "altKey": "eopa_img7" },
-      { "type": "image", "src": "/work/eopa/COC_spread.webp", "position": "fourth", "alt": "Catalogue of Characters spread", "altKey": "eopa_img8" },
-      { "type": "text", "value": "Encyclopedia & catalogues", "key": "encyclopediaAndCatalogues" },
-      { "type": "image", "src": "/work/eopa/COV_cover.webp", "position": "third", "alt": "Catalogue of Voices cover", "altKey": "eopa_img9" },
-      { "type": "image", "src": "/work/eopa/COV_content.webp", "position": "fifth", "alt": "Catalogue of Voices content page", "altKey": "eopa_img10" },
-      { "type": "image", "src": "/work/eopa/COV_spread.webp", "position": "fourth", "alt": "Catalogue of Voices spread", "altKey": "eopa_img11" }
+      {
+        "type": "image",
+        "src": "/images/eopa/EOPA_cover.webp",
+        "position": "first",
+        "alt": {
+          "en": "Encyclopedia of Phonetic Alphabets cover",
+          "nl": "Encyclopedie van Fonetische Alfabetten omslag"
+        }
+      },
+      {
+        "type": "image",
+        "src": "/images/eopa/EOPA_content.webp",
+        "position": "second",
+        "alt": {
+          "en": "Encyclopedia of Phonetic Alphabets content page",
+          "nl": "Encyclopedie van Fonetische Alfabetten inhoudspagina"
+        }
+      },
+      {
+        "type": "text",
+        "en": "3700+ graphemes & 51 phonetic alphabets",
+        "nl": "3700+ grafemen & 51 fonetische alfabetten"
+      },
+      {
+        "type": "image",
+        "src": "/images/eopa/EOPA_spread1.webp",
+        "position": "third",
+        "alt": {
+          "en": "Encyclopedia of Phonetic Alphabets first spread",
+          "nl": "Encyclopedie van Fonetische Alfabetten eerste spread"
+        }
+      },
+      {
+        "type": "image",
+        "src": "/images/eopa/EOPA_spread2.webp",
+        "position": "fourth",
+        "alt": {
+          "en": "Encyclopedia of Phonetic Alphabets second spread",
+          "nl": "Encyclopedie van Fonetische Alfabetten tweede spread"
+        }
+      },
+      {
+        "type": "image",
+        "src": "/images/eopa/EOPA_spread3.webp",
+        "position": "fifth",
+        "alt": {
+          "en": "Encyclopedia of Phonetic Alphabets third spread",
+          "nl": "Encyclopedie van Fonetische Alfabetten derde spread"
+        }
+      },
+      {
+        "type": "text",
+        "en": "Triple book series",
+        "nl": "Driedelig boekenreeks"
+      },
+      {
+        "type": "image",
+        "src": "/images/eopa/COC_cover.webp",
+        "position": "second",
+        "alt": {
+          "en": "Catalogue of Characters cover",
+          "nl": "Catalogus van Tekens omslag"
+        }
+      },
+      {
+        "type": "image",
+        "src": "/images/eopa/COC_content.webp",
+        "position": "first",
+        "alt": {
+          "en": "Catalogue of Characters content page",
+          "nl": "Catalogus van Tekens inhoudspagina"
+        }
+      },
+      {
+        "type": "image",
+        "src": "/images/eopa/COC_spread.webp",
+        "position": "fourth",
+        "alt": {
+          "en": "Catalogue of Characters spread",
+          "nl": "Catalogus van Tekens spread"
+        }
+      },
+      {
+        "type": "text",
+        "en": "Encyclopedia & catalogues",
+        "nl": "Encyclopedie & catalogi"
+      },
+      {
+        "type": "image",
+        "src": "/images/eopa/COV_cover.webp",
+        "position": "third",
+        "alt": {
+          "en": "Catalogue of Voices cover",
+          "nl": "Catalogus van Stemmen omslag"
+        }
+      },
+      {
+        "type": "image",
+        "src": "/images/eopa/COV_content.webp",
+        "position": "fifth",
+        "alt": {
+          "en": "Catalogue of Voices content page",
+          "nl": "Catalogus van Stemmen inhoudspagina"
+        }
+      },
+      {
+        "type": "image",
+        "src": "/images/eopa/COV_spread.webp",
+        "position": "fourth",
+        "alt": {
+          "en": "Catalogue of Voices spread",
+          "nl": "Catalogus van Stemmen spread"
+        }
+      }
     ]
   },
   {
     "id": "typeinterplay",
     "title": "TYPE-INTER-PLAY",
-    "cover": "/work/typeinterplay/TIP_spread01.webp",
-    "titleLines": ["TYPE-INTER-", "PLAY"],
-    "description": "Publication for navigating between content table, body and image & keyword index",
+    "cover": "/images/typeinterplay/TIP_spread01.webp",
+    "titleLines": [
+      "TYPE-INTER-",
+      "PLAY"
+    ],
+    "description": {
+      "en": "Publication for navigating between content table, body and image & keyword index",
+      "nl": "Publicatie voor navigatie tussen inhoudsopgave, tekst en beeld- & trefwoordenregister"
+    },
     "year": "2024",
     "content": [
-      { "type": "image", "src": "/work/typeinterplay/TIP_spread01.webp", "position": "first", "alt": "Type-Interplay first spread", "altKey": "typeinterplay_img1" },
-      { "type": "image", "src": "/work/typeinterplay/TIP_cover.webp", "position": "second", "alt": "Type-Interplay cover", "altKey": "typeinterplay_img2" },
-      { "type": "text", "value": "Based on cursus \"Letterzetten, Chapter 17\"", "italic": "Letterzetten, Chapter 17", "key": "typeinterplay_source" },
-      { "type": "image", "src": "/work/typeinterplay/TIP_content.webp", "position": "third", "alt": "Type-Interplay content page", "altKey": "typeinterplay_img3" },
-      { "type": "image", "src": "/work/typeinterplay/TIP_titlepage.webp", "position": "fourth", "alt": "Type-Interplay title page", "altKey": "typeinterplay_img4" },
-      { "type": "text", "value": "Navigation on the outside of the book", "key": "navigationOutside" },
-      { "type": "image", "src": "/work/typeinterplay/TIP_keywords.webp", "position": "fifth", "alt": "Type-Interplay keyword index on book edge", "altKey": "typeinterplay_img5" },
-      { "type": "image", "src": "/work/typeinterplay/TIP_spread03.webp", "position": "second", "alt": "Type-Interplay third spread", "altKey": "typeinterplay_img6" },
-      { "type": "image", "src": "/work/typeinterplay/TIP_images.webp", "position": "fourth", "alt": "Type-Interplay image index", "altKey": "typeinterplay_img7" }
+      {
+        "type": "image",
+        "src": "/images/typeinterplay/TIP_spread01.webp",
+        "position": "first",
+        "alt": {
+          "en": "Type-Interplay first spread",
+          "nl": "Type-Interplay eerste spread"
+        }
+      },
+      {
+        "type": "image",
+        "src": "/images/typeinterplay/TIP_cover.webp",
+        "position": "second",
+        "alt": {
+          "en": "Type-Interplay cover",
+          "nl": "Type-Interplay omslag"
+        }
+      },
+      {
+        "type": "text",
+        "en": "Based on course \"Letterzetten, Chapter 17\"",
+        "nl": "Gebaseerd op de cursus \"Letterzetten, Hoofdstuk 17\""
+      },
+      {
+        "type": "image",
+        "src": "/images/typeinterplay/TIP_content.webp",
+        "position": "third",
+        "alt": {
+          "en": "Type-Interplay content page",
+          "nl": "Type-Interplay inhoudspagina"
+        }
+      },
+      {
+        "type": "image",
+        "src": "/images/typeinterplay/TIP_titlepage.webp",
+        "position": "fourth",
+        "alt": {
+          "en": "Type-Interplay title page",
+          "nl": "Type-Interplay titelpagina"
+        }
+      },
+      {
+        "type": "text",
+        "en": "Navigation on the outside of the book",
+        "nl": "Navigatie aan de buitenkant van het boek"
+      },
+      {
+        "type": "image",
+        "src": "/images/typeinterplay/TIP_keywords.webp",
+        "position": "fifth",
+        "alt": {
+          "en": "Type-Interplay keyword index on book edge",
+          "nl": "Type-Interplay trefwoordenregister op boekrand"
+        }
+      },
+      {
+        "type": "image",
+        "src": "/images/typeinterplay/TIP_spread03.webp",
+        "position": "second",
+        "alt": {
+          "en": "Type-Interplay third spread",
+          "nl": "Type-Interplay derde spread"
+        }
+      },
+      {
+        "type": "image",
+        "src": "/images/typeinterplay/TIP_images.webp",
+        "position": "fourth",
+        "alt": {
+          "en": "Type-Interplay image index",
+          "nl": "Type-Interplay beeldenregister"
+        }
+      }
     ]
   },
   {
     "id": "virgajesse",
     "title": "VIRGA JESSE",
-    "cover": "/work/virgajesse/VG_hommages_spread1.webp",
-    "titleLines": ["VIRGA JESSE"],
-    "description": "Publication for the 7-yearly Virgin Jessa Festivities in Hasselt",
+    "cover": "/images/virgajesse/VG_hommages_spread1.webp",
+    "titleLines": [
+      "VIRGA JESSE"
+    ],
+    "description": {
+      "en": "Publication for the 7-yearly Virgin Jessa Festivities in Hasselt",
+      "nl": "Publicatie voor de zevenjarige Virga Jessefeesten in Hasselt"
+    },
     "year": "2024",
     "content": [
-      { "type": "image", "src": "/work/virgajesse/VG_hommages_spread1.webp", "position": "first", "alt": "Virga Jesse hommages first spread", "altKey": "virgajesse_img1" },
-      { "type": "image", "src": "/work/virgajesse/VG_hommages.webp", "position": "second", "alt": "Virga Jesse hommages booklet", "altKey": "virgajesse_img2" },
-      { "type": "text", "value": "Group project", "key": "groupProject" },
-      { "type": "image", "src": "/work/virgajesse/VG_poster.webp", "position": "third", "alt": "Virga Jesse poster", "altKey": "virgajesse_img3" },
-      { "type": "text", "value": "Poster, magazine / booklet & addendum", "key": "posterMagazineAddendum" },
-      { "type": "image", "src": "/work/virgajesse/VG_publicatie.webp", "position": "fourth", "alt": "Virga Jesse full publication set", "altKey": "virgajesse_img4" },
-      { "type": "image", "src": "/work/virgajesse/VG_hommages_spread2.webp", "position": "fifth", "alt": "Virga Jesse hommages second spread", "altKey": "virgajesse_img5" }
+      {
+        "type": "image",
+        "src": "/images/virgajesse/VG_hommages_spread1.webp",
+        "position": "first",
+        "alt": {
+          "en": "Virga Jesse hommages first spread",
+          "nl": "Virga Jesse hommages eerste spread"
+        }
+      },
+      {
+        "type": "image",
+        "src": "/images/virgajesse/VG_hommages.webp",
+        "position": "second",
+        "alt": {
+          "en": "Virga Jesse hommages booklet",
+          "nl": "Virga Jesse hommages boekje"
+        }
+      },
+      {
+        "type": "text",
+        "en": "Group project",
+        "nl": "Groepsproject"
+      },
+      {
+        "type": "image",
+        "src": "/images/virgajesse/VG_poster.webp",
+        "position": "third",
+        "alt": {
+          "en": "Virga Jesse poster",
+          "nl": "Virga Jesse poster"
+        }
+      },
+      {
+        "type": "text",
+        "en": "Poster, magazine / booklet & addendum",
+        "nl": "Poster, magazine / boekje & addendum"
+      },
+      {
+        "type": "image",
+        "src": "/images/virgajesse/VG_publicatie.webp",
+        "position": "fourth",
+        "alt": {
+          "en": "Virga Jesse full publication set",
+          "nl": "Virga Jesse volledige publicatieset"
+        }
+      },
+      {
+        "type": "image",
+        "src": "/images/virgajesse/VG_hommages_spread2.webp",
+        "position": "fifth",
+        "alt": {
+          "en": "Virga Jesse hommages second spread",
+          "nl": "Virga Jesse hommages tweede spread"
+        }
+      }
     ]
   },
   {
     "id": "enzomari",
     "title": "ENZO MARI",
-    "cover": "/work/enzomari/EM_poster2.webp",
-    "titleLines": ["ENZO MARI"],
-    "description": "Triple poster series for the Enzo Mari exhibition in C-Mine Genk",
+    "cover": "/images/enzomari/EM_poster2.webp",
+    "titleLines": [
+      "ENZO MARI"
+    ],
+    "description": {
+      "en": "Triple poster series for the Enzo Mari exhibition in C-Mine Genk",
+      "nl": "Drieluik posterreeks voor de Enzo Mari-tentoonstelling in C-Mine Genk"
+    },
     "year": "2022",
     "content": [
-      { "type": "image", "src": "/work/enzomari/EM_poster2.webp", "position": "first", "alt": "Enzo Mari second poster", "altKey": "enzomari_img1" },
-      { "type": "image", "src": "/work/enzomari/EM_poster1.webp", "position": "second", "alt": "Enzo Mari first poster", "altKey": "enzomari_img2" },
-      { "type": "text", "value": "With an invite", "key": "withAnInvite" },
-      { "type": "image", "src": "/work/enzomari/EM_invite.webp", "position": "third", "alt": "Enzo Mari exhibition invite", "altKey": "enzomari_img3" },
-      { "type": "image", "src": "/work/enzomari/EM_poster&invite.webp", "position": "fourth", "alt": "Enzo Mari poster and invite together", "altKey": "enzomari_img4" }
+      {
+        "type": "image",
+        "src": "/images/enzomari/EM_poster2.webp",
+        "position": "first",
+        "alt": {
+          "en": "Enzo Mari second poster",
+          "nl": "Enzo Mari tweede poster"
+        }
+      },
+      {
+        "type": "image",
+        "src": "/images/enzomari/EM_poster1.webp",
+        "position": "second",
+        "alt": {
+          "en": "Enzo Mari first poster",
+          "nl": "Enzo Mari eerste poster"
+        }
+      },
+      {
+        "type": "text",
+        "en": "With an invite",
+        "nl": "Met een uitnodiging"
+      },
+      {
+        "type": "image",
+        "src": "/images/enzomari/EM_invite.webp",
+        "position": "third",
+        "alt": {
+          "en": "Enzo Mari exhibition invite",
+          "nl": "Enzo Mari tentoonstelling uitnodiging"
+        }
+      },
+      {
+        "type": "image",
+        "src": "/images/enzomari/EM_poster&invite.webp",
+        "position": "fourth",
+        "alt": {
+          "en": "Enzo Mari poster and invite together",
+          "nl": "Enzo Mari poster en uitnodiging samen"
+        }
+      }
     ]
   },
   {
     "id": "archetype",
     "title": "ARCHETYPE",
-    "cover": "/work/archetype/ARCH_spread1.webp",
-    "titleLines": ["ARCHETYPE"],
-    "description": "Booklet for cataloging textual information",
+    "cover": "/images/archetype/ARCH_spread1.webp",
+    "titleLines": [
+      "ARCHETYPE"
+    ],
+    "description": {
+      "en": "Booklet for cataloging textual information",
+      "nl": "Boekje voor het catalogiseren van tekstuele informatie"
+    },
     "year": "2022",
     "content": [
-      { "type": "image", "src": "/work/archetype/ARCH_spread2.webp", "position": "first", "alt": "Archetype second spread", "altKey": "archetype_img1" },
-      { "type": "image", "src": "/work/archetype/ARCH_cover.webp", "position": "second", "alt": "Archetype cover", "altKey": "archetype_img2" },
-      { "type": "image", "src": "/work/archetype/ARCH_spread1.webp", "position": "third", "alt": "Archetype first spread", "altKey": "archetype_img3" }
+      {
+        "type": "image",
+        "src": "/images/archetype/ARCH_spread2.webp",
+        "position": "first",
+        "alt": {
+          "en": "Archetype second spread",
+          "nl": "Archetype tweede spread"
+        }
+      },
+      {
+        "type": "image",
+        "src": "/images/archetype/ARCH_cover.webp",
+        "position": "second",
+        "alt": {
+          "en": "Archetype cover",
+          "nl": "Archetype omslag"
+        }
+      },
+      {
+        "type": "image",
+        "src": "/images/archetype/ARCH_spread1.webp",
+        "position": "third",
+        "alt": {
+          "en": "Archetype first spread",
+          "nl": "Archetype eerste spread"
+        }
+      }
     ]
   },
   {
     "id": "phoneticalphabet",
     "title": "PHONETIC ALPHABET ARCHIVE",
-    "cover": "/work/phoneticalphabet/PAA_homepage1.webp",
-    "titleLines": ["PHONETIC ALPHABET ARCHIVE"],
-    "description": "Digitalization of EOPA",
+    "cover": "/images/phoneticalphabet/PAA_homepage1.webp",
+    "titleLines": [
+      "PHONETIC ALPHABET ARCHIVE"
+    ],
+    "description": {
+      "en": "Digitalization of EOPA",
+      "nl": "Digitalisering van EOPA"
+    },
     "year": "2026",
-    "link": { "href": "https://phoneticalphabetarchive.netlify.app", "label": "Go to website" },
+    "link": {
+      "href": "https://phoneticalphabetarchive.netlify.app",
+      "label": {
+        "en": "Go to website",
+        "nl": "Naar de website"
+      }
+    },
+    "git": {
+      "href": "https://github.com/GielBoogaertsPXL/phoneticalphabetarchive",
+      "label": {
+        "en": "Go to repository",
+        "nl": "Naar de repository"
+      }
+    },
     "content": [
-      { "type": "image", "src": "/work/phoneticalphabet/PAA_homepage1.webp", "position": "first", "alt": "Phonetic Alphabet Archive homepage", "altKey": "phoneticalphabet_img1" },
-      { "type": "image", "src": "/work/phoneticalphabet/PAA_homepage2.webp", "position": "second", "alt": "Phonetic Alphabet Archive homepage detail", "altKey": "phoneticalphabet_img2" },
-      { "type": "text", "value": "Archive of phonetic alphabets", "key": "archiveOfPhoneticAlphabets" },
-      { "type": "image", "src": "/work/phoneticalphabet/PAA_detailpage1.webp", "position": "third", "alt": "Phonetic Alphabet Archive detail page", "altKey": "phoneticalphabet_img3" },
-      { "type": "image", "src": "/work/phoneticalphabet/PAA_detailpage2.webp", "position": "fourth", "alt": "Phonetic Alphabet Archive character overview", "altKey": "phoneticalphabet_img4" },
-      { "type": "text", "value": "Full character sets", "key": "fullCharacterSets" },
-      { "type": "image", "src": "/work/phoneticalphabet/PAA_detailpage3.webp", "position": "fifth", "alt": "Phonetic Alphabet Archive character detail", "altKey": "phoneticalphabet_img5" },
-      { "type": "image", "src": "/work/phoneticalphabet/PAA_detailpage4.webp", "position": "first", "alt": "Phonetic Alphabet Archive additional detail", "altKey": "phoneticalphabet_img6" },
-      { "type": "text", "value": "*Under development*", "key": "underDevelopment" }
+      {
+        "type": "image",
+        "src": "/images/phoneticalphabet/PAA_homepage1.webp",
+        "position": "first",
+        "alt": {
+          "en": "Phonetic Alphabet Archive homepage",
+          "nl": "Fonetisch Alfabet Archief homepage"
+        }
+      },
+      {
+        "type": "image",
+        "src": "/images/phoneticalphabet/PAA_homepage2.webp",
+        "position": "second",
+        "alt": {
+          "en": "Phonetic Alphabet Archive homepage detail",
+          "nl": "Fonetisch Alfabet Archief homepage detail"
+        }
+      },
+      {
+        "type": "text",
+        "en": "Archive of phonetic alphabets",
+        "nl": "Archief van fonetische alfabetten"
+      },
+      {
+        "type": "image",
+        "src": "/images/phoneticalphabet/PAA_detailpage1.webp",
+        "position": "third",
+        "alt": {
+          "en": "Phonetic Alphabet Archive detail page",
+          "nl": "Fonetisch Alfabet Archief detailpagina"
+        }
+      },
+      {
+        "type": "image",
+        "src": "/images/phoneticalphabet/PAA_detailpage2.webp",
+        "position": "fourth",
+        "alt": {
+          "en": "Phonetic Alphabet Archive character overview",
+          "nl": "Fonetisch Alfabet Archief tekenoverzicht"
+        }
+      },
+      {
+        "type": "text",
+        "en": "Full character sets",
+        "nl": "Volledige tekensets"
+      },
+      {
+        "type": "image",
+        "src": "/images/phoneticalphabet/PAA_detailpage3.webp",
+        "position": "fifth",
+        "alt": {
+          "en": "Phonetic Alphabet Archive character detail",
+          "nl": "Fonetisch Alfabet Archief tekendetail"
+        }
+      },
+      {
+        "type": "image",
+        "src": "/images/phoneticalphabet/PAA_detailpage4.webp",
+        "position": "first",
+        "alt": {
+          "en": "Phonetic Alphabet Archive additional detail",
+          "nl": "Fonetisch Alfabet Archief extra detail"
+        }
+      },
+      {
+        "type": "text",
+        "en": "*Under development*",
+        "nl": "*In ontwikkeling*"
+      }
+    ]
+  },
+  {
+    "id": "immohabits",
+    "title": "IMMOHABITS",
+    "cover": "/images/immohabits/home_1.webp",
+    "titleLines": [
+      "IMMOHABITS"
+    ],
+    "description": {
+      "en": "Rebranding of ImmoHabits",
+      "nl": "Rebranding van ImmoHabits"
+    },
+    "year": "2026",
+    "content": [
+      {
+        "type": "image",
+        "src": "/images/immohabits/home_1.webp",
+        "position": "first",
+        "alt": {
+          "en": "Immohabits homepage",
+          "nl": "Immohabits home pagina"
+        }
+      },
+      {
+        "type": "text",
+        "en": "Interdisciplinary group project",
+        "nl": "Interdisciplinair groepsproject"
+      },
+      {
+        "type": "image",
+        "src": "/images/immohabits/home_2.webp",
+        "position": "second",
+        "alt": {
+          "en": "Immohabits homepage",
+          "nl": "Immohabits home pagina"
+        }
+      },
+      {
+        "type": "image",
+        "src": "/images/immohabits/home_3.webp",
+        "position": "third",
+        "alt": {
+          "en": "Immohabits homepage",
+          "nl": "Immohabits home pagina"
+        }
+      },
+      {
+        "type": "text",
+        "en": "Fully functional website & dashboard",
+        "nl": "Volledig functionele website & dashboard"
+      },
+      {
+        "type": "image",
+        "src": "/images/immohabits/login.webp",
+        "position": "fourth",
+        "alt": {
+          "en": "Immohabits loginpage",
+          "nl": "Immohabits login pagina"
+        }
+      }
+    ]
+  },
+  {
+    "id": "hybridpublishing",
+    "title": "HYBRID PUBLISHING",
+    "cover": "/images/hybridpublishing/HP_cover.webp",
+    "titleLines": [
+      "HYBRID PUBLISHING"
+    ],
+    "description": {
+      "en": "Collaboration with Senne Houben",
+      "nl": "Samenwerking met Senne Houben"
+    },
+    "year": "2026",
+    "content": [
+      {
+        "type": "image",
+        "src": "/images/hybridpublishing/HP_cover.webp",
+        "position": "first",
+        "alt": {
+          "en": "Book cover",
+          "nl": "Boek cover"
+        }
+      },
+      {
+        "type": "image",
+        "src": "/images/hybridpublishing/HP_spread1.webp",
+        "position": "second",
+        "alt": {
+          "en": "Book spread",
+          "nl": "Boek spread"
+        }
+      },
+      {
+        "type": "text",
+        "en": "Portfolio book of concert photography",
+        "nl": "Portfolioboek over concertfotografie"
+      },
+      {
+        "type": "image",
+        "src": "/images/hybridpublishing/HP_spread2.webp",
+        "position": "third",
+        "alt": {
+          "en": "Book spread",
+          "nl": "Boek spread"
+        }
+      },
+      {
+        "type": "image",
+        "src": "/images/hybridpublishing/HP_spread3.webp",
+        "position": "fourth",
+        "alt": {
+          "en": "Book spread",
+          "nl": "Boek spread"
+        }
+      },
+      {
+        "type": "text",
+        "en": "Dual reading directions",
+        "nl": "Leesbaar in 2 richtingen"
+      },
+      {
+        "type": "image",
+        "src": "/images/hybridpublishing/HP_spread4.webp",
+        "position": "fifth",
+        "alt": {
+          "en": "Book spread",
+          "nl": "Boek spread"
+        }
+      },
+      {
+        "type": "image",
+        "src": "/images/hybridpublishing/HP_spread5.webp",
+        "position": "first",
+        "alt": {
+          "en": "Book spread",
+          "nl": "Boek spread"
+        }
+      },
+      {
+        "type": "image",
+        "src": "/images/hybridpublishing/HP_spread6.webp",
+        "position": "second",
+        "alt": {
+          "en": "Book spread",
+          "nl": "Boek spread"
+        }
+      }
     ]
   }
 ]

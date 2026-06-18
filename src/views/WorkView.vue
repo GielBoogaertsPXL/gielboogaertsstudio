@@ -15,7 +15,7 @@ const projectMap = Object.fromEntries(
 
     <section>
       <div class="first">
-        <RouterLink :to="`/projects/${projectMap.microtype.id}`">
+        <RouterLink :to="`/work/${projectMap.microtype.id}`">
           <img :src="projectMap.microtype.cover" />
           <div class="text">
             <span>{{ projectMap.microtype.title }}</span>
@@ -23,7 +23,7 @@ const projectMap = Object.fromEntries(
           </div>
         </RouterLink>
 
-        <RouterLink :to="`/projects/${projectMap.jumbledscript.id}`">
+        <RouterLink :to="`/work/${projectMap.jumbledscript.id}`">
           <img :src="projectMap.jumbledscript.cover" />
           <div class="text">
             <span>{{ projectMap.jumbledscript.title }}</span>
@@ -33,7 +33,7 @@ const projectMap = Object.fromEntries(
       </div>
 
       <div class="second">
-        <RouterLink :to="`/projects/${projectMap.eopa.id}`">
+        <RouterLink :to="`/work/${projectMap.eopa.id}`">
           <img id="eopa" :src="projectMap.eopa.cover" />
           <div class="text">
             <span>{{ projectMap.eopa.title }}</span>
@@ -43,7 +43,7 @@ const projectMap = Object.fromEntries(
       </div>
 
       <div class="third">
-        <RouterLink :to="`/projects/${projectMap.typeinterplay.id}`">
+        <RouterLink :to="`/work/${projectMap.typeinterplay.id}`">
           <img :src="projectMap.typeinterplay.cover" />
           <div class="text">
             <span>{{ projectMap.typeinterplay.title }}</span>
@@ -51,7 +51,7 @@ const projectMap = Object.fromEntries(
           </div>
         </RouterLink>
 
-        <RouterLink :to="`/projects/${projectMap.virgajesse.id}`">
+        <RouterLink :to="`/work/${projectMap.virgajesse.id}`">
           <img :src="projectMap.virgajesse.cover" />
           <div class="text">
             <span>{{ projectMap.virgajesse.title }}</span>
@@ -61,7 +61,7 @@ const projectMap = Object.fromEntries(
       </div>
 
       <div class="fourth">
-        <RouterLink :to="`/projects/${projectMap.enzomari.id}`">
+        <RouterLink :to="`/work/${projectMap.enzomari.id}`">
           <img :src="projectMap.enzomari.cover" />
           <div class="text">
             <span>{{ projectMap.enzomari.title }}</span>
@@ -69,7 +69,7 @@ const projectMap = Object.fromEntries(
           </div>
         </RouterLink>
 
-        <RouterLink :to="`/projects/${projectMap.archetype.id}`">
+        <RouterLink :to="`/work/${projectMap.archetype.id}`">
           <img :src="projectMap.archetype.cover" />
           <div class="text">
             <span>{{ projectMap.archetype.title }}</span>
@@ -79,11 +79,30 @@ const projectMap = Object.fromEntries(
       </div>
 
       <div class="fifth">
-        <RouterLink :to="`/projects/${projectMap.phoneticalphabet.id}`">
+        <RouterLink :to="`/work/${projectMap.phoneticalphabet.id}`">
           <img :src="projectMap.phoneticalphabet.cover" />
           <div class="text">
             <span>{{ projectMap.phoneticalphabet.title }}</span>
             <span>{{ projectMap.phoneticalphabet.year }}</span>
+          </div>
+        </RouterLink>
+      </div>
+
+      <div class="third">
+        <RouterLink :to="`/work/${projectMap.immohabits.id}`">
+          <img :src="projectMap.immohabits.cover" />
+          <div class="text">
+            <span>{{ projectMap.immohabits.title }}</span>
+            <span>{{ projectMap.immohabits.year }}</span>
+          </div>
+        </RouterLink>
+
+
+        <RouterLink :to="`/work/${projectMap.hybridpublishing.id}`">
+          <img :src="projectMap.hybridpublishing.cover" />
+          <div class="text">
+            <span>{{ projectMap.hybridpublishing.title }}</span>
+            <span>{{ projectMap.hybridpublishing.year }}</span>
           </div>
         </RouterLink>
       </div>
@@ -198,7 +217,7 @@ section {
   }
 
   #eopa {
-    content:url("/work/eopa/covers_vertical.webp");
+    content:url("/images/eopa/covers_vertical.webp");
   }
 
   .third {

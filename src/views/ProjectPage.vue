@@ -1,7 +1,7 @@
 <script setup>
 import { useI18n } from 'vue-i18n'
 
-const { t } = useI18n()
+const { t, locale } = useI18n()
 
 defineProps({
   project: Object,
@@ -28,8 +28,8 @@ defineProps({
     <!-- CONTENT -->
     <section>
 
-      <!-- DESCRIPTION (translated) -->
-      <p>{{ t(`projects.${project.id}.description`) }}</p>
+      <!-- DESCRIPTION -->
+      <p>{{ project.description[locale] }}</p>
 
       <!-- DYNAMIC CONTENT -->
       <template v-for="(block, index) in project.content" :key="index">
@@ -39,12 +39,12 @@ defineProps({
             v-if="block.type === 'image'"
             :src="block.src"
             :class="block.position"
-            :alt="block.altKey ? t(`alts.${block.altKey}`) : (block.alt || '')"
+            :alt="block.alt[locale]"
         />
 
-        <!-- TEXT (kept from JSON as-is — these are captions, not UI text) -->
+        <!-- CAPTION -->
         <p v-else-if="block.type === 'text'">
-          {{ block.key ? t(`captions.${block.key}`) : block.value }}
+          {{ block[locale] }}
         </p>
 
       </template>
@@ -59,7 +59,7 @@ defineProps({
           target="_blank"
           class="link"
       >
-        {{ t(`projects.${project.id}.downloadLabel`) }}
+        {{ project.downloadPdf.label[locale] }}
       </a>
 
       <!-- OPTIONAL LINK -->
@@ -69,7 +69,17 @@ defineProps({
           target="_blank"
           class="link"
       >
-        {{ t(`projects.${project.id}.linkLabel`) }}
+        {{ project.link.label[locale] }}
+      </a>
+
+      <a
+          v-if="project.git"
+          :href="project.git.href"
+          target="_blank"
+          class="link"
+          id="github"
+      >
+        {{ project.git.label[locale] }}
       </a>
 
     </section>
@@ -77,14 +87,14 @@ defineProps({
     <div class="rotation">
       <RouterLink
           v-if="prev"
-          :to="`/projects/${prev.id}`"
+          :to="`/work/${prev.id}`"
       >
         {{ t('project.prev') }}
       </RouterLink>
 
       <RouterLink
           v-if="next"
-          :to="`/projects/${next.id}`"
+          :to="`/work/${next.id}`"
       >
         {{ t('project.next') }}
       </RouterLink>
@@ -156,6 +166,10 @@ img {
   color: white;
   border-radius: 2rem;
   padding: 0.5rem 1rem;
+}
+
+#github {
+  margin-top: -3rem;
 }
 
 .first {

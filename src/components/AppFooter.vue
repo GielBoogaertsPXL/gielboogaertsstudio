@@ -45,6 +45,7 @@ onUnmounted(() => {
       <div>
         <a href="https://www.instagram.com/gielboogaerts.studio/" target="_blank">Instagram</a>
         <a href="https://www.linkedin.com/in/giel-boogaerts-581b96224/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/GielBoogaertsPXL" target="_blank">Github</a>
       </div>
       <div class="privacyPolicy">
         <a href="/privacyPolicy.pdf" download>{{ t('footer.privacy') }}</a>
