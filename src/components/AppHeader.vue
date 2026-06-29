@@ -1,10 +1,25 @@
 <script setup>
 import { ref } from 'vue'
 import { useI18n } from "vue-i18n";
+import { useHeroStore } from '@/stores/useHeroStore'
+import { useRoute } from 'vue-router'
+
+const route = useRoute()
+const heroStore = useHeroStore()
 
 const menuOpen = ref(false)
 const langOpen = ref(false)
 const { locale, t } = useI18n()
+
+function toggleMenu() {
+  menuOpen.value = !menuOpen.value
+  document.body.style.overflow = menuOpen.value ? 'hidden' : ''
+}
+
+function closeMenu() {
+  menuOpen.value = false
+  document.body.style.overflow = ''
+}
 
 function setLang(lang) {
   locale.value = lang
@@ -15,16 +30,23 @@ function setLang(lang) {
 
 <template>
   <header>
-    <button class="menu-btn" @click="menuOpen = !menuOpen" :class="{ open: menuOpen }">
+    <button
+        class="menu-btn"
+        :class="{
+        white: heroStore.isOnHero && route.name === 'home',
+        active: menuOpen,
+      }"
+        @click="toggleMenu"
+    >
       <span>{{ menuOpen ? t('nav.close') : t('nav.menu') }}</span>
     </button>
 
     <Transition name="overlay">
       <div class="overlay" v-if="menuOpen">
         <nav>
-          <RouterLink :to="{ name: 'home' }" @click="menuOpen = false">{{ t('nav.home') }}</RouterLink>
-          <RouterLink :to="{ name: 'work' }" @click="menuOpen = false">{{ t('nav.work') }}</RouterLink>
-          <RouterLink :to="{ name: 'about' }" @click="menuOpen = false">{{ t('nav.about') }}</RouterLink>
+          <RouterLink :to="{ name: 'home' }" @click="closeMenu">{{ t('nav.home') }}</RouterLink>
+          <RouterLink :to="{ name: 'work' }" @click="closeMenu">{{ t('nav.work') }}</RouterLink>
+          <RouterLink :to="{ name: 'about' }" @click="closeMenu">{{ t('nav.about') }}</RouterLink>
         </nav>
 
         <div class="lang-wrapper">
@@ -70,8 +92,15 @@ nav a {
 
 .menu-btn span {
   font: var(--header-2);
-  color: var(--dark-color);
   mix-blend-mode: screen;
+}
+
+.menu-btn.white {
+  color: white;
+}
+
+.menu-btn.active {
+  color: black;
 }
 
 .overlay {
@@ -127,7 +156,6 @@ nav {
   opacity: 1;
 }
 
-/* Popup transition */
 .popup-enter-active,
 .popup-leave-active {
   transition: opacity 0.2s ease, transform 0.2s ease;
@@ -139,7 +167,6 @@ nav {
   transform: translateY(6px);
 }
 
-/* Overlay transition */
 .overlay-enter-active,
 .overlay-leave-active {
   transition: opacity 0.3s ease, transform 0.3s ease;

@@ -1,30 +1,26 @@
 <script setup>
-import { onMounted, onUnmounted, useTemplateRef, ref } from 'vue'
+import { onMounted, onUnmounted, ref, useTemplateRef } from 'vue'
+import { useHeroStore } from '@/stores/useHeroStore'
+import { useRoute } from 'vue-router'
 
-const tagEl = useTemplateRef('tag')
+const route = useRoute()
+const wrapperEl = useTemplateRef('wrapper')
 const visible = ref(true)
+const stretched = ref(false)
+const heroStore = useHeroStore()
 
 let observer
 
-function fitText() {
-  const el = tagEl.value
-  if (!el) return
-
-  el.style.fontSize = ''
-  el.style.whiteSpace = 'nowrap'
-  el.style.display = 'inline-block'
-
-  const parentWidth = el.parentElement.offsetWidth
-  const textWidth = el.scrollWidth
-  const scale = parentWidth / textWidth
-
-  el.style.fontSize = parseFloat(getComputedStyle(el).fontSize) * scale + 'px'
-  el.style.display = ''
-}
-
 onMounted(() => {
-  fitText()
-  window.addEventListener('resize', fitText)
+  const wrapper = wrapperEl.value
+
+  wrapper.style.width = 'fit-content'
+  const textWidth = wrapper.offsetWidth
+  wrapper.style.width = textWidth + 'px'
+
+  setTimeout(() => {
+    stretched.value = true
+  }, 2000)
 
   const footer = document.querySelector('#footer')
   observer = new IntersectionObserver(([entry]) => {
@@ -35,30 +31,60 @@ onMounted(() => {
 
 onUnmounted(() => {
   observer.disconnect()
-  window.removeEventListener('resize', fitText)
 })
 </script>
 
 <template>
-  <p :class="['tag', { hidden: !visible }]" ref="tag">GIEL BOOGAERTS STUDIO</p>
+  <div ref="wrapper" :class="['tag-wrapper', { stretched, hidden: !visible }]">
+    <p class="tag" :class="{ white: heroStore.isOnHero && route.name === 'home' }">GIEL BOOGAERTS STUDIO</p>
+  </div>
 </template>
 
 <style scoped>
-.tag {
-  width: 100%;
+.tag-wrapper {
   position: fixed;
-  top: 50%;
+  top: 0;
+  left: 50%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  transform: translateX(-50%);
   padding: 0 1rem;
-  text-align-last: justify;
-  font: var(--header-3);
-  color: var(--dark-color);
-  mix-blend-mode: screen;
   z-index: 100;
-  transition: opacity 0.4s ease;
   pointer-events: none;
+  transition: opacity 0.4s ease, width 1s ease;
+  mix-blend-mode: screen;
 }
 
-.tag.hidden {
+.tag-wrapper.white {
+  mix-blend-mode: normal;
+}
+
+.tag-wrapper.stretched {
+  width: 100% !important;
+}
+
+.tag-wrapper.hidden {
   opacity: 0;
+}
+
+.tag {
+  width: 100%;
+  font: var(--header-3);
+  font-size: 6rem;
+  color: var(--dark-color);
+  white-space: nowrap;
+  text-align: justify;
+  text-align-last: justify;
+  transition: font-size 1s ease, color 0.4s ease;
+
+}
+
+.tag-wrapper.stretched .tag {
+  font-size: 2rem;
+}
+
+.tag.white {
+  color: white;
 }
 </style>

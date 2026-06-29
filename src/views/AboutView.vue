@@ -1,21 +1,34 @@
 <script setup>
 import { useI18n } from 'vue-i18n'
+import { useScrollReveal } from '/scripts/useScrollReveal'
+
 const { t } = useI18n()
+
+const { el: p1El, visible: p1Visible } = useScrollReveal()
+const { el: p2El, visible: p2Visible } = useScrollReveal()
+const { el: p3El, visible: p3Visible } = useScrollReveal()
+const { el: keywordsEl, visible: keywordsVisible } = useScrollReveal()
+const { el: quoteEl, visible: quoteVisible } = useScrollReveal()
 </script>
 
 <template>
   <main>
     <h1>{{ t('about.title') }}</h1>
     <section>
-      <p>{{ t('about.p1') }}</p>
-      <p>{{ t('about.p2') }}</p>
-      <p>
+      <p ref="p1El" class="scroll-item" :class="{ visible: p1Visible }">
+        {{ t('about.p1') }}
+      </p>
+      <p ref="p2El" class="scroll-item" :class="{ visible: p2Visible }">
+        {{ t('about.p2') }}
+      </p>
+      <p ref="p3El" class="scroll-item" :class="{ visible: p3Visible }">
         {{ t('about.p3_pre') }}<span>{{ t('about.p3_master') }}</span>{{ t('about.p3_mid') }}<span>{{ t('about.p3_digital') }}</span>{{ t('about.p3_mid2') }}<span>{{ t('about.p3_book') }}</span>{{ t('about.p3_end') }}
       </p>
-      <p>{{ t('about.keywords_label') }}<br>
+      <p ref="keywordsEl" class="scroll-item" :class="{ visible: keywordsVisible }">
+        {{ t('about.keywords_label') }}<br>
         <span>{{ t('about.keywords') }}</span>
       </p>
-      <p class="quote">
+      <p ref="quoteEl" class="scroll-item quote" :class="{ visible: quoteVisible }">
         {{ t('about.quote') }}
         <span class="quotePerson">{{ t('about.quote_person') }}</span>
       </p>
@@ -62,5 +75,14 @@ span {
   color: var(--primary-color);
   font: var(--header-3);
   font-weight: 400;
+}
+
+.scroll-item {
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+
+.scroll-item.visible {
+  opacity: 1;
 }
 </style>

@@ -36,7 +36,7 @@ a:hover::after, button:hover::after {
   /*TYPOGRAPHY*/
   --typeface: 'HelveticaNeue';
 
-  --headline: 700 8.5vw/calc(1em - 0.25vw) var(--typeface), sans-serif;
+  --headline: 700 6vw/calc(1em - 0.25vw) var(--typeface), sans-serif;
   --header-1: 700 7vw/calc(1em - 0.25vw) var(--typeface), sans-serif;
   --header-2: 700 3rem/50px var(--typeface), sans-serif;
   --header-3: 700 2rem var(--typeface), sans-serif;
@@ -52,7 +52,7 @@ a:hover::after, button:hover::after {
 
 @media screen and (max-width: 900px) {
   :root {
-    --headline: 700 10vw/calc(1em - 0.25vw) var(--typeface), sans-serif;
+    --headline: 700 8vw/calc(1em - 0.25vw) var(--typeface), sans-serif;
     --header-1: 700 7.5vw/calc(1em - 0.25vw) var(--typeface), sans-serif;
     --header-3: 700 2rem var(--typeface), sans-serif;
   }
