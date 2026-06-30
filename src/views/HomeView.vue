@@ -1,16 +1,17 @@
 <script setup>
 import HeroSection from "@/components/HeroSection.vue";
 import WelcomeSection from "@/components/WelcomeSection.vue";
-import LogoSection from "@/components/LogoSection.vue";
 import { useScrollReveal } from "/scripts/useScrollReveal";
 
 const { el: welcomeEl, visible: welcomeVisible } = useScrollReveal()
-const { el: logoEl, visible: logoVisible } = useScrollReveal()
 </script>
 
 <template>
   <main>
     <HeroSection />
+    <div ref="welcomeEl" class="scroll-section" :class="{ visible: welcomeVisible }">
+      <WelcomeSection />
+    </div>
   </main>
 </template>
 

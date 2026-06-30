@@ -65,10 +65,4 @@ onMounted(() => {
 #content.visible {
   opacity: 1;
 }
-
-@media screen and (max-width: 650px) {
-  #app, #content {
-    gap: 1rem;
-  }
-}
 </style>

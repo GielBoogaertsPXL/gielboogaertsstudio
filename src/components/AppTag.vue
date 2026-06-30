@@ -36,7 +36,7 @@ onUnmounted(() => {
 
 <template>
   <div ref="wrapper" :class="['tag-wrapper', { stretched, hidden: !visible }]">
-    <p class="tag" :class="{ white: heroStore.isOnHero && route.name === 'home' }">GIEL BOOGAERTS STUDIO</p>
+    <p class="tag" :class="{ white: heroStore.isOnHeroCenter && route.name === 'home' }">GIEL BOOGAERTS STUDIO</p>
   </div>
 </template>
 
@@ -86,5 +86,32 @@ onUnmounted(() => {
 
 .tag.white {
   color: white;
+}
+
+@media screen and (max-width: 1400px) {
+  .tag {
+    font-size: 5rem;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .tag {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .tag {
+    font-size: 3rem;
+  }
+  .tag-wrapper.stretched .tag {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .tag {
+    font-size: 2rem;
+  }
 }
 </style>

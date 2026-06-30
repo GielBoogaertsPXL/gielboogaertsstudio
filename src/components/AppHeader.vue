@@ -33,7 +33,7 @@ function setLang(lang) {
     <button
         class="menu-btn"
         :class="{
-        white: heroStore.isOnHero && route.name === 'home',
+        white: heroStore.isOnHeroTop && route.name === 'home',
         active: menuOpen,
       }"
         @click="toggleMenu"

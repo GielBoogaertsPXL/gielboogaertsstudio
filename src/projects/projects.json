@@ -670,6 +670,20 @@
       "nl": "Rebranding van ImmoHabits"
     },
     "year": "2026",
+    "link": {
+      "href": "https://immohabits09.netlify.app",
+      "label": {
+        "en": "Go to website",
+        "nl": "Naar de website"
+      }
+    },
+    "git": {
+      "href": "https://github.com/GielBoogaertsPXL/immohabits",
+      "label": {
+        "en": "Go to repository",
+        "nl": "Naar de repository"
+      }
+    },
     "content": [
       {
         "type": "image",
@@ -722,7 +736,7 @@
   {
     "id": "hybridpublishing",
     "title": "HYBRID PUBLISHING",
-    "cover": "/images/hybridpublishing/HP_cover.webp",
+    "cover": "/images/hybridpublishing/HP_hero.webp",
     "titleLines": [
       "HYBRID PUBLISHING"
     ],

@@ -7,24 +7,40 @@ const heroStore = useHeroStore()
 const slides = [
   '/images/typeinterplay/TIP_hero.webp',
   '/images/phoneticalphabet/PAA_hero.webp',
-  '/images/microtype/MT_hero.webp',
+  '/images/hybridpublishing/HP_hero.webp',
   '/images/jumbledscript/JS_hero.webp',
 ]
 
 const imagesEl = useTemplateRef('images')
 
-let observer
+let centerObserver
+let topObserver
 let timeoutId
 
-const initObserver = () => {
-  observer = new IntersectionObserver(
+const initObservers = () => {
+  // tag sits vertically centered on screen
+  centerObserver = new IntersectionObserver(
       ([entry]) => {
-        heroStore.isOnHero = entry.isIntersecting
+        heroStore.isOnHeroCenter = entry.isIntersecting
       },
-      { threshold: 0 }
+      {
+        threshold: 0,
+        rootMargin: '-50% 0px -50% 0px',
+      }
   )
+  centerObserver.observe(imagesEl.value)
 
-  observer.observe(imagesEl.value)
+  // menu button sits near the top of the screen
+  topObserver = new IntersectionObserver(
+      ([entry]) => {
+        heroStore.isOnHeroTop = entry.isIntersecting
+      },
+      {
+        threshold: 0,
+        rootMargin: '0px 0px -95% 0px',
+      }
+  )
+  topObserver.observe(imagesEl.value)
 }
 
 onMounted(() => {
@@ -32,17 +48,19 @@ onMounted(() => {
     heroStore.introPlayed = true
 
     timeoutId = setTimeout(() => {
-      initObserver()
+      initObservers()
     }, 3000)
   } else {
-    initObserver()
+    initObservers()
   }
 })
 
 onUnmounted(() => {
   clearTimeout(timeoutId)
-  observer?.disconnect()
-  heroStore.isOnHero = false
+  centerObserver?.disconnect()
+  topObserver?.disconnect()
+  heroStore.isOnHeroCenter = false
+  heroStore.isOnHeroTop = false
 })
 </script>
 
@@ -55,22 +73,6 @@ onUnmounted(() => {
         <img :src="src" alt="" />
       </div>
     </div>
-
-<!--    <div class="text">
-      <div class="left">
-        <h2>EOPA</h2>
-        <h2>TYPE-INTER-PLAY</h2>
-        <h2>JUMBLED SCRIPT</h2>
-      </div>
-      <div class="right">
-        <h2>MICROTYPE</h2>
-        <h2>VIRGA JESSE</h2>
-        <h2>ENZO MARI</h2>
-        <h2>IMMOHABITS</h2>
-        <h2>HYBRID PUBLISHING</h2>
-        <h2>PHONETIC ALPHABET ARCHIVE</h2>
-      </div>
-    </div>-->
 
   </section>
 </template>
@@ -100,35 +102,8 @@ section {
   object-fit: cover;
 }
 
-.text {
-  position: sticky;
-  top: 0;
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 0.5rem 1rem;
-  z-index: 10;
-  pointer-events: none;
-}
-
 h2 {
   font: var(--headline);
   color: white;
-}
-
-.right {
-  text-align: right;
-}
-
-.right, .left {
-  width: 100%;
-}
-
-@media screen and (max-width: 450px) {
-  .left {
-    width: 20rem;
-  }
 }
 </style>
