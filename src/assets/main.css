@@ -67,8 +67,4 @@ a:hover::after, button:hover::after {
     --body-bold: 700 0.7rem var(--typeface), sans-serif;
     --body-regular: 400 0.7rem var(--typeface), sans-serif;
   }
-
-  body {
-    padding-top: 1rem;
-  }
 }

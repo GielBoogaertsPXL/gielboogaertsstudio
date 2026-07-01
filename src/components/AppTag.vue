@@ -109,9 +109,15 @@ onUnmounted(() => {
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 680px) {
   .tag {
     font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .tag {
+    font-size: 1.6rem;
   }
 }
 </style>
