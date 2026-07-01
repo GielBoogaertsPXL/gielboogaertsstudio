@@ -106,6 +106,16 @@ const projectMap = Object.fromEntries(
           </div>
         </RouterLink>
       </div>
+
+      <div class="first">
+        <RouterLink :to="`/work/${projectMap.pasters.id}`">
+          <img :src="projectMap.pasters.cover" />
+          <div class="text">
+            <span>{{ projectMap.pasters.title }}</span>
+            <span>{{ projectMap.pasters.year }}</span>
+          </div>
+        </RouterLink>
+      </div>
     </section>
   </main>
 </template>

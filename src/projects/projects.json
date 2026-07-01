@@ -2,7 +2,7 @@
   {
     "id": "microtype",
     "title": "MICROTYPE",
-    "cover": "/images/microtype/MT_booklet&poster1.webp",
+    "cover": "/images/microtype/MT_hero.webp",
     "titleLines": [
       "MICROTYPE"
     ],
@@ -14,20 +14,20 @@
     "content": [
       {
         "type": "image",
-        "src": "/images/microtype/MT_booklet&poster1.webp",
+        "src": "/images/microtype/MT_hero.webp",
         "position": "first",
         "alt": {
-          "en": "Microtype booklet and poster side by side",
-          "nl": "Microtype boekje en poster naast elkaar"
+          "en": "Microtype booklet cover",
+          "nl": "Microtype boekje omslag"
         }
       },
       {
         "type": "image",
-        "src": "/images/microtype/MT_cover.webp",
+        "src": "/images/microtype/MT_booklet&poster1.webp",
         "position": "second",
         "alt": {
-          "en": "Microtype booklet cover",
-          "nl": "Microtype boekje omslag"
+          "en": "Microtype booklet and poster side by side",
+          "nl": "Microtype boekje en poster naast elkaar"
         }
       },
       {
@@ -88,20 +88,20 @@
     "content": [
       {
         "type": "image",
-        "src": "/images/jumbledscript/JS_spread1.webp",
+        "src": "/images/jumbledscript/JS_hero.webp",
         "position": "first",
         "alt": {
-          "en": "Jumbled Script book spread",
-          "nl": "Jumbled Script boekpagina"
+          "en": "Jumbled Script book cover",
+          "nl": "Jumbled Script boek omslag"
         }
       },
       {
         "type": "image",
-        "src": "/images/jumbledscript/JS_cover.webp",
+        "src": "/images/jumbledscript/JS_spread1.webp",
         "position": "second",
         "alt": {
-          "en": "Jumbled Script book cover",
-          "nl": "Jumbled Script boek omslag"
+          "en": "Jumbled Script book spread",
+          "nl": "Jumbled Script boekpagina"
         }
       },
       {
@@ -395,7 +395,7 @@
   {
     "id": "virgajesse",
     "title": "VIRGA JESSE",
-    "cover": "/images/virgajesse/VG_hommages_spread1.webp",
+    "cover": "/images/virgajesse/VG_hero.webp",
     "titleLines": [
       "VIRGA JESSE"
     ],
@@ -407,20 +407,20 @@
     "content": [
       {
         "type": "image",
-        "src": "/images/virgajesse/VG_hommages_spread1.webp",
+        "src": "/images/virgajesse/VG_hero.webp",
         "position": "first",
         "alt": {
-          "en": "Virga Jesse hommages first spread",
-          "nl": "Virga Jesse hommages eerste spread"
+          "en": "Virga Jesse hommages booklet",
+          "nl": "Virga Jesse hommages boekje"
         }
       },
       {
         "type": "image",
-        "src": "/images/virgajesse/VG_hommages.webp",
+        "src": "/images/virgajesse/VG_spread1.webp",
         "position": "second",
         "alt": {
-          "en": "Virga Jesse hommages booklet",
-          "nl": "Virga Jesse hommages boekje"
+          "en": "Virga Jesse hommages first spread",
+          "nl": "Virga Jesse hommages eerste spread"
         }
       },
       {
@@ -430,8 +430,17 @@
       },
       {
         "type": "image",
-        "src": "/images/virgajesse/VG_poster.webp",
+        "src": "/images/virgajesse/VG_spread2.webp",
         "position": "third",
+        "alt": {
+          "en": "Virga Jesse hommages second spread",
+          "nl": "Virga Jesse hommages tweede spread"
+        }
+      },
+      {
+        "type": "image",
+        "src": "/images/virgajesse/VG_poster.webp",
+        "position": "fourth",
         "alt": {
           "en": "Virga Jesse poster",
           "nl": "Virga Jesse poster"
@@ -445,19 +454,10 @@
       {
         "type": "image",
         "src": "/images/virgajesse/VG_publicatie.webp",
-        "position": "fourth",
+        "position": "fifth",
         "alt": {
           "en": "Virga Jesse full publication set",
           "nl": "Virga Jesse volledige publicatieset"
-        }
-      },
-      {
-        "type": "image",
-        "src": "/images/virgajesse/VG_hommages_spread2.webp",
-        "position": "fifth",
-        "alt": {
-          "en": "Virga Jesse hommages second spread",
-          "nl": "Virga Jesse hommages tweede spread"
         }
       }
     ]
@@ -477,6 +477,15 @@
     "content": [
       {
         "type": "image",
+        "src": "/images/enzomari/EM_poster1.webp",
+        "position": "second",
+        "alt": {
+          "en": "Enzo Mari first poster",
+          "nl": "Enzo Mari eerste poster"
+        }
+      },
+      {
+        "type": "image",
         "src": "/images/enzomari/EM_poster2.webp",
         "position": "first",
         "alt": {
@@ -486,11 +495,11 @@
       },
       {
         "type": "image",
-        "src": "/images/enzomari/EM_poster1.webp",
-        "position": "second",
+        "src": "/images/enzomari/EM_poster3.webp",
+        "position": "third",
         "alt": {
-          "en": "Enzo Mari first poster",
-          "nl": "Enzo Mari eerste poster"
+          "en": "Enzo Mari third poster",
+          "nl": "Enzo Mari derde poster"
         }
       },
       {
@@ -501,7 +510,7 @@
       {
         "type": "image",
         "src": "/images/enzomari/EM_invite.webp",
-        "position": "third",
+        "position": "fourth",
         "alt": {
           "en": "Enzo Mari exhibition invite",
           "nl": "Enzo Mari tentoonstelling uitnodiging"
@@ -510,7 +519,7 @@
       {
         "type": "image",
         "src": "/images/enzomari/EM_poster&invite.webp",
-        "position": "fourth",
+        "position": "fifth",
         "alt": {
           "en": "Enzo Mari poster and invite together",
           "nl": "Enzo Mari poster en uitnodiging samen"
@@ -521,7 +530,7 @@
   {
     "id": "archetype",
     "title": "ARCHETYPE",
-    "cover": "/images/archetype/ARCH_spread1.webp",
+    "cover": "/images/archetype/ARCH_hero.webp",
     "titleLines": [
       "ARCHETYPE"
     ],
@@ -533,7 +542,7 @@
     "content": [
       {
         "type": "image",
-        "src": "/images/archetype/ARCH_spread2.webp",
+        "src": "/images/archetype/ARCH_hero.webp",
         "position": "first",
         "alt": {
           "en": "Archetype second spread",
@@ -542,7 +551,7 @@
       },
       {
         "type": "image",
-        "src": "/images/archetype/ARCH_cover.webp",
+        "src": "/images/archetype/ARCH_spread1.webp",
         "position": "second",
         "alt": {
           "en": "Archetype cover",
@@ -551,7 +560,7 @@
       },
       {
         "type": "image",
-        "src": "/images/archetype/ARCH_spread1.webp",
+        "src": "/images/archetype/ARCH_spread2.webp",
         "position": "third",
         "alt": {
           "en": "Archetype first spread",
@@ -661,7 +670,7 @@
   {
     "id": "immohabits",
     "title": "IMMOHABITS",
-    "cover": "/images/immohabits/home_1.webp",
+    "cover": "/images/immohabits/IH_home1.webp",
     "titleLines": [
       "IMMOHABITS"
     ],
@@ -687,7 +696,7 @@
     "content": [
       {
         "type": "image",
-        "src": "/images/immohabits/home_1.webp",
+        "src": "/images/immohabits/IH_home1.webp",
         "position": "first",
         "alt": {
           "en": "Immohabits homepage",
@@ -701,7 +710,7 @@
       },
       {
         "type": "image",
-        "src": "/images/immohabits/home_2.webp",
+        "src": "/images/immohabits/IH_home2.webp",
         "position": "second",
         "alt": {
           "en": "Immohabits homepage",
@@ -710,11 +719,11 @@
       },
       {
         "type": "image",
-        "src": "/images/immohabits/home_3.webp",
+        "src": "/images/immohabits/IH_login.webp",
         "position": "third",
         "alt": {
-          "en": "Immohabits homepage",
-          "nl": "Immohabits home pagina"
+          "en": "Immohabits login page",
+          "nl": "Immohabits login pagina"
         }
       },
       {
@@ -724,11 +733,20 @@
       },
       {
         "type": "image",
-        "src": "/images/immohabits/login.webp",
+        "src": "/images/immohabits/IH_dashboard.webp",
         "position": "fourth",
         "alt": {
-          "en": "Immohabits loginpage",
-          "nl": "Immohabits login pagina"
+          "en": "Immohabits dashboard",
+          "nl": "Immohabits dashboard"
+        }
+      },
+      {
+        "type": "image",
+        "src": "/images/immohabits/IH_estate.webp",
+        "position": "first",
+        "alt": {
+          "en": "Immohabits estate overview",
+          "nl": "Immohabits pand overzicht"
         }
       }
     ]
@@ -814,6 +832,57 @@
         "type": "image",
         "src": "/images/hybridpublishing/HP_spread6.webp",
         "position": "second",
+        "alt": {
+          "en": "Book spread",
+          "nl": "Boek spread"
+        }
+      }
+    ]
+  },
+  {
+    "id": "pasters",
+    "title": "PASTERS",
+    "cover": "/images/pasters/PASTER_hero.webp",
+    "titleLines": [
+      "PASTERS"
+    ],
+    "description": {
+      "en": "Typographical posters expanding from EOPA",
+      "nl": "Typografische posters als uitbreiding van EOPA"
+    },
+    "year": "2026",
+    "content": [
+      {
+        "type": "image",
+        "src": "/images/pasters/PASTER_hero.webp",
+        "position": "first",
+        "alt": {
+          "en": "Book cover",
+          "nl": "Boek cover"
+        }
+      },
+      {
+        "type": "image",
+        "src": "/images/pasters/PASTER_1.webp",
+        "position": "second",
+        "alt": {
+          "en": "Book spread",
+          "nl": "Boek spread"
+        }
+      },
+      {
+        "type": "image",
+        "src": "/images/pasters/PASTER_2.webp",
+        "position": "third",
+        "alt": {
+          "en": "Book spread",
+          "nl": "Boek spread"
+        }
+      },
+      {
+        "type": "image",
+        "src": "/images/pasters/PASTER_3.webp",
+        "position": "fourth",
         "alt": {
           "en": "Book spread",
           "nl": "Boek spread"
