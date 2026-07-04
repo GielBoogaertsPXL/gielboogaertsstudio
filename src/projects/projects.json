@@ -168,11 +168,10 @@
   {
     "id": "eopa",
     "title": "ENCYCLOPEDIA OF PHONETIC ALPHABETS",
-    "cover": "/images/eopa/covers.webp",
+    "cover": "/images/eopa/EOPA_hero.webp",
     "titleLines": [
       "ENCYCLOPEDIA OF",
-      "PHONETIC",
-      "ALPHABETS"
+      "PHONETIC ALPHABETS"
     ],
     "description": {
       "en": "Master project on documenting phonetic alphabets",
@@ -319,20 +318,20 @@
     "content": [
       {
         "type": "image",
-        "src": "/images/typeinterplay/TIP_spread01.webp",
+        "src": "/images/typeinterplay/TIP_hero.webp",
         "position": "first",
         "alt": {
-          "en": "Type-Interplay first spread",
-          "nl": "Type-Interplay eerste spread"
+          "en": "Type-Interplay cover",
+          "nl": "Type-Interplay omslag"
         }
       },
       {
         "type": "image",
-        "src": "/images/typeinterplay/TIP_cover.webp",
+        "src": "/images/typeinterplay/TIP_titlepage.webp",
         "position": "second",
         "alt": {
-          "en": "Type-Interplay cover",
-          "nl": "Type-Interplay omslag"
+          "en": "Type-Interplay title page",
+          "nl": "Type-Interplay titelpagina"
         }
       },
       {
@@ -351,11 +350,11 @@
       },
       {
         "type": "image",
-        "src": "/images/typeinterplay/TIP_titlepage.webp",
+        "src": "/images/typeinterplay/TIP_spread1.webp",
         "position": "fourth",
         "alt": {
-          "en": "Type-Interplay title page",
-          "nl": "Type-Interplay titelpagina"
+          "en": "Type-Interplay first spread",
+          "nl": "Type-Interplay eerste spread"
         }
       },
       {
@@ -365,8 +364,17 @@
       },
       {
         "type": "image",
-        "src": "/images/typeinterplay/TIP_keywords.webp",
+        "src": "/images/typeinterplay/TIP_spread2.webp",
         "position": "fifth",
+        "alt": {
+          "en": "Type-Interplay second spread",
+          "nl": "Type-Interplay second spread"
+        }
+      },
+      {
+        "type": "image",
+        "src": "/images/typeinterplay/TIP_keywords.webp",
+        "position": "first",
         "alt": {
           "en": "Type-Interplay keyword index on book edge",
           "nl": "Type-Interplay trefwoordenregister op boekrand"
@@ -374,17 +382,8 @@
       },
       {
         "type": "image",
-        "src": "/images/typeinterplay/TIP_spread03.webp",
-        "position": "second",
-        "alt": {
-          "en": "Type-Interplay third spread",
-          "nl": "Type-Interplay derde spread"
-        }
-      },
-      {
-        "type": "image",
         "src": "/images/typeinterplay/TIP_images.webp",
-        "position": "fourth",
+        "position": "second",
         "alt": {
           "en": "Type-Interplay image index",
           "nl": "Type-Interplay beeldenregister"
@@ -574,7 +573,8 @@
     "title": "PHONETIC ALPHABET ARCHIVE",
     "cover": "/images/phoneticalphabet/PAA_hero.webp",
     "titleLines": [
-      "PHONETIC ALPHABET ARCHIVE"
+      "PHONETIC ALPHABET",
+      "ARCHIVE"
     ],
     "description": {
       "en": "Digitalization of EOPA",
@@ -598,7 +598,7 @@
     "content": [
       {
         "type": "image",
-        "src": "/images/phoneticalphabet/PAA_homepage1.webp",
+        "src": "/images/phoneticalphabet/PAA_hero.webp",
         "position": "first",
         "alt": {
           "en": "Phonetic Alphabet Archive homepage",
@@ -607,8 +607,17 @@
       },
       {
         "type": "image",
-        "src": "/images/phoneticalphabet/PAA_homepage2.webp",
+        "src": "/images/phoneticalphabet/PAA_home1.webp",
         "position": "second",
+        "alt": {
+          "en": "Phonetic Alphabet Archive homepage",
+          "nl": "Fonetisch Alfabet Archief homepage"
+        }
+      },
+      {
+        "type": "image",
+        "src": "/images/phoneticalphabet/PAA_home2.webp",
+        "position": "third",
         "alt": {
           "en": "Phonetic Alphabet Archive homepage detail",
           "nl": "Fonetisch Alfabet Archief homepage detail"
@@ -621,8 +630,8 @@
       },
       {
         "type": "image",
-        "src": "/images/phoneticalphabet/PAA_detailpage1.webp",
-        "position": "third",
+        "src": "/images/phoneticalphabet/PAA_detail1.webp",
+        "position": "fourth",
         "alt": {
           "en": "Phonetic Alphabet Archive detail page",
           "nl": "Fonetisch Alfabet Archief detailpagina"
@@ -630,8 +639,8 @@
       },
       {
         "type": "image",
-        "src": "/images/phoneticalphabet/PAA_detailpage2.webp",
-        "position": "fourth",
+        "src": "/images/phoneticalphabet/PAA_detail2.webp",
+        "position": "fifth",
         "alt": {
           "en": "Phonetic Alphabet Archive character overview",
           "nl": "Fonetisch Alfabet Archief tekenoverzicht"
@@ -644,8 +653,8 @@
       },
       {
         "type": "image",
-        "src": "/images/phoneticalphabet/PAA_detailpage3.webp",
-        "position": "fifth",
+        "src": "/images/phoneticalphabet/PAA_detail3.webp",
+        "position": "first",
         "alt": {
           "en": "Phonetic Alphabet Archive character detail",
           "nl": "Fonetisch Alfabet Archief tekendetail"
@@ -653,8 +662,8 @@
       },
       {
         "type": "image",
-        "src": "/images/phoneticalphabet/PAA_detailpage4.webp",
-        "position": "first",
+        "src": "/images/phoneticalphabet/PAA_detail4.webp",
+        "position": "second",
         "alt": {
           "en": "Phonetic Alphabet Archive additional detail",
           "nl": "Fonetisch Alfabet Archief extra detail"
@@ -766,7 +775,7 @@
     "content": [
       {
         "type": "image",
-        "src": "/images/hybridpublishing/HP_cover.webp",
+        "src": "/images/hybridpublishing/HP_hero.webp",
         "position": "first",
         "alt": {
           "en": "Book cover",
@@ -832,6 +841,24 @@
         "type": "image",
         "src": "/images/hybridpublishing/HP_spread6.webp",
         "position": "second",
+        "alt": {
+          "en": "Book spread",
+          "nl": "Boek spread"
+        }
+      },
+      {
+        "type": "image",
+        "src": "/images/hybridpublishing/HP_spread7.webp",
+        "position": "third",
+        "alt": {
+          "en": "Book spread",
+          "nl": "Boek spread"
+        }
+      },
+      {
+        "type": "image",
+        "src": "/images/hybridpublishing/HP_spread8.webp",
+        "position": "fourth",
         "alt": {
           "en": "Book spread",
           "nl": "Boek spread"

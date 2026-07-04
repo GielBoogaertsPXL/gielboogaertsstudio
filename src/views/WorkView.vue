@@ -227,7 +227,7 @@ section {
   }
 
   #eopa {
-    content:url("/images/eopa/covers_vertical.webp");
+    content:url("/images/eopa/EOPA_hero_vertical.webp");
   }
 
   .third {

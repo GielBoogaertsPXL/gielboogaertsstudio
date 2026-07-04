@@ -131,7 +131,6 @@ section {
   align-items: center;
   gap: 0.4rem;
   margin-left: 1rem;
-  margin-bottom: 9rem;
   padding: 0;
   background: none;
   border: none;
@@ -173,36 +172,46 @@ img {
 }
 
 .first {
-  margin-left: 15vw;
+  margin-left: 0;
 }
 
 .second {
-  margin-left: 10vw;
+  margin-left: 40%;
 }
 
 .third {
-  margin-left: 30vw;
+  margin-left: 20%;
 }
 
 .fourth {
-  margin-left: 50vw;
+  margin-left: 55%;
 }
 
-@media screen and (max-width: 450px) {
+.fifth {
+  margin-left: 10%;
+}
+
+@media screen and (max-width: 900px) {
   img {
-    width: 80%;
+    width: 60%;
   }
 
-  .third {
-    margin-left: 15vw;
+  .second {
+    margin-left: 35%;
   }
 
   .fourth {
-    margin-left: 18vw;
+    margin-left: 10%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  img {
+    width: 100%;
   }
 
-  .back {
-    margin-bottom: 0;
+  .first, .second, .third, .fourth, .fifth {
+    margin-left: 0;
   }
 }
 </style>

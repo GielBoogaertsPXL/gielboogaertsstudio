@@ -13,7 +13,8 @@ const urls = [
     '/work/archetype',
     '/work/phoneticalphabet',
     '/work/hybridpublishing',
-    '/work/immohabits'
+    '/work/immohabits',
+    '/work/pasters'
 ]
 
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>

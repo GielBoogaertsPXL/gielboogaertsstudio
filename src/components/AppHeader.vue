@@ -25,6 +25,7 @@ function setLang(lang) {
   locale.value = lang
   localStorage.setItem('locale', lang)
   langOpen.value = false
+  closeMenu();
 }
 </script>
 
@@ -87,7 +88,6 @@ nav a {
   cursor: pointer;
   z-index: 200;
   position: relative;
-  padding-top: 0.25rem;
 }
 
 .menu-btn span {
