@@ -31,6 +31,10 @@ a:hover::after, button:hover::after {
   width: 100%;
 }
 
+a.no-underline::after {
+  display: none;
+}
+
 :root {
 
   /*TYPOGRAPHY*/

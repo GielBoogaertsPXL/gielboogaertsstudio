@@ -7,10 +7,50 @@
       "MICROTYPE"
     ],
     "description": {
-      "en": "Publication for navigating between poster and booklet",
-      "nl": "Publicatie voor navigatie tussen poster en boekje"
+      "en": [
+        "Microtype is an editorial design project exploring the relationship between a booklet and its accompanying poster. The publication investigates how typography can guide navigation between two interconnected printed formats.",
+        "Based on an article by Martin Majoor, the project focuses on hierarchy, readability, and the dialogue between large- and small-scale typography."
+      ],
+      "nl": [
+        "Microtype is een redactioneel ontwerpproject dat de relatie onderzoekt tussen een boekje en de bijhorende poster. De publicatie verkent hoe typografie kan dienen als navigatiemiddel tussen twee verbonden drukwerken.",
+        "Gebaseerd op een artikel van Martin Majoor ligt de nadruk op hiërarchie, leesbaarheid en de wisselwerking tussen typografie op verschillende schalen."
+      ]
     },
     "year": "2022",
+    "tags": {
+      "medium": {
+        "title": {
+          "en": "Print",
+          "nl": "Print"
+        },
+        "items": [
+          {
+            "en": "Booklet",
+            "nl": "Boekje"
+          },
+          {
+            "en": "Poster",
+            "nl": "Poster"
+          }
+        ]
+      },
+      "design": {
+        "title": {
+          "en": "Design",
+          "nl": "Ontwerp"
+        },
+        "items": [
+          {
+            "en": "Book Design",
+            "nl": "Boekontwerp"
+          },
+          {
+            "en": "Typography",
+            "nl": "Typografie"
+          }
+        ]
+      }
+    },
     "content": [
       {
         "type": "image",
@@ -32,7 +72,7 @@
       },
       {
         "type": "text",
-        "en": "Based on article \"Had de koning schoenmaat 49?\" by Martin Majoor",
+        "en": "Based on the article \"Had de koning schoenmaat 49?\" by Martin Majoor",
         "nl": "Gebaseerd op het artikel \"Had de koning schoenmaat 49?\" van Martin Majoor"
       },
       {
@@ -81,10 +121,54 @@
       "JUMBLED SCRIPT"
     ],
     "description": {
-      "en": "Bachelor project on visualizing dyslexia",
-      "nl": "Bachelorproject over het visualiseren van dyslexie"
+      "en": [
+        "Jumbled Script is my bachelor's graduation project investigating how graphic design can visualize the experience of dyslexia.",
+        "The project combines editorial design, typography and research into a book and poster series."
+      ],
+      "nl": [
+        "Jumbled Script is mijn bachelorproject waarin grafisch ontwerp de ervaring van dyslexie visualiseert.",
+        "Het project combineert redactioneel ontwerp, typografie en onderzoek in een boek en posterreeks."
+      ]
     },
     "year": "2024",
+    "tags": {
+      "medium": {
+        "title": {
+          "en": "Print",
+          "nl": "Print"
+        },
+        "items": [
+          {
+            "en": "Book",
+            "nl": "Boek"
+          },
+          {
+            "en": "Poster",
+            "nl": "Poster"
+          }
+        ]
+      },
+      "design": {
+        "title": {
+          "en": "Design",
+          "nl": "Ontwerp"
+        },
+        "items": [
+          {
+            "en": "Book Design",
+            "nl": "Boekontwerp"
+          },
+          {
+            "en": "Typography",
+            "nl": "Typografie"
+          },
+          {
+            "en": "Research",
+            "nl": "Onderzoek"
+          }
+        ]
+      }
+    },
     "content": [
       {
         "type": "image",
@@ -174,8 +258,14 @@
       "PHONETIC ALPHABETS"
     ],
     "description": {
-      "en": "Master project on documenting phonetic alphabets",
-      "nl": "Masterproject over het documenteren van fonetische alfabetten"
+      "en": [
+        "EOPA is my master's project on researching phonetic alphabets. It holds a collection of 51 different phonetic alphabets and 3700+ individual graphemes.",
+        "The project combines editorial design, typography and research into a triple book series. The encyclopedia with all alphabets and contextual information and a catalogue for all vowels and one for all consonants."
+      ],
+      "nl": [
+        "EOPA is mijn masterproject over het onderzoeken van fonetische alfabetten. Het bevat een verzameling van 51 verschillende fonetische alfabetten en meer dan 3700 individuele grafemen.",
+        "Het project combineert redactioneel ontwerp, typografie en onderzoek in een driedelige boekenreeks. De encyclopedie bevat alle alfabetten en contextuele informatie, evenals een catalogus van alle klinkers en een van alle medeklinkers."
+      ]
     },
     "year": "2025",
     "downloadPdf": {
@@ -183,6 +273,44 @@
       "label": {
         "en": "Download thesis",
         "nl": "Thesis downloaden"
+      }
+    },
+    "tags": {
+      "medium": {
+        "title": {
+          "en": "Print",
+          "nl": "Print"
+        },
+        "items": [
+          {
+            "en": "Book",
+            "nl": "Boek"
+          },
+          {
+            "en": "Catalogue",
+            "nl": "Catalogus"
+          }
+        ]
+      },
+      "design": {
+        "title": {
+          "en": "Design",
+          "nl": "Ontwerp"
+        },
+        "items": [
+          {
+            "en": "Book Design",
+            "nl": "Boekontwerp"
+          },
+          {
+            "en": "Typography",
+            "nl": "Typografie"
+          },
+          {
+            "en": "Research",
+            "nl": "Onderzoek"
+          }
+        ]
       }
     },
     "content": [
@@ -311,10 +439,50 @@
       "PLAY"
     ],
     "description": {
-      "en": "Publication for navigating between content table, body and image & keyword index",
-      "nl": "Publicatie voor navigatie tussen inhoudsopgave, tekst en beeld- & trefwoordenregister"
+      "en": [
+        "Type-Inter-Play explores alternative navigation systems within printed publications.",
+        "It investigates how typography can actively guide readers through editorial content."
+      ],
+      "nl": [
+        "Type-Inter-Play onderzoekt alternatieve navigatiesystemen binnen gedrukte publicaties.",
+        "Het project onderzoekt hoe typografie lezers actief door redactionele inhoud kan begeleiden."
+      ]
     },
     "year": "2024",
+    "tags": {
+      "medium": {
+        "title": {
+          "en": "Print",
+          "nl": "Print"
+        },
+        "items": [
+          {
+            "en": "Book",
+            "nl": "Boek"
+          }
+        ]
+      },
+      "design": {
+        "title": {
+          "en": "Design",
+          "nl": "Ontwerp"
+        },
+        "items": [
+          {
+            "en": "Book Design",
+            "nl": "Boekontwerp"
+          },
+          {
+            "en": "Typography",
+            "nl": "Typografie"
+          },
+          {
+            "en": "Navigation",
+            "nl": "Navigatie"
+          }
+        ]
+      }
+    },
     "content": [
       {
         "type": "image",
@@ -368,7 +536,7 @@
         "position": "fifth",
         "alt": {
           "en": "Type-Interplay second spread",
-          "nl": "Type-Interplay second spread"
+          "nl": "Type-Interplay tweede spread"
         }
       },
       {
@@ -399,10 +567,58 @@
       "VIRGA JESSE"
     ],
     "description": {
-      "en": "Publication for the 7-yearly Virgin Jessa Festivities in Hasselt",
-      "nl": "Publicatie voor de zevenjarige Virga Jessefeesten in Hasselt"
+      "en": [
+        "Editorial identity created for the Virga Jesse festivities.",
+        "The project includes a magazine, booklet, poster and supporting printed matter."
+      ],
+      "nl": [
+        "Redactionele identiteit voor de Virga Jessefeesten.",
+        "Het project omvat een magazine, boekje, poster en ondersteunend drukwerk."
+      ]
     },
     "year": "2024",
+    "tags": {
+      "medium": {
+        "title": {
+          "en": "Print",
+          "nl": "Print"
+        },
+        "items": [
+          {
+            "en": "Magazine",
+            "nl": "Magazine"
+          },
+          {
+            "en": "Poster",
+            "nl": "Poster"
+          },
+          {
+            "en": "Booklet",
+            "nl": "Boekje"
+          }
+        ]
+      },
+      "design": {
+        "title": {
+          "en": "Design",
+          "nl": "Ontwerp"
+        },
+        "items": [
+          {
+            "en": "Editorial Design",
+            "nl": "Redactioneel Ontwerp"
+          },
+          {
+            "en": "Typography",
+            "nl": "Typografie"
+          },
+          {
+            "en": "Group Project",
+            "nl": "Groepsproject"
+          }
+        ]
+      }
+    },
     "content": [
       {
         "type": "image",
@@ -469,10 +685,50 @@
       "ENZO MARI"
     ],
     "description": {
-      "en": "Triple poster series for the Enzo Mari exhibition in C-Mine Genk",
-      "nl": "Drieluik posterreeks voor de Enzo Mari-tentoonstelling in C-Mine Genk"
+      "en": [
+        "Poster series for the Enzo Mari exhibition at C-Mine.",
+        "Inspired by Mari's philosophy of design and visual communication."
+      ],
+      "nl": [
+        "Posterreeks voor de Enzo Mari-tentoonstelling in C-Mine.",
+        "Geïnspireerd door Mari's ontwerpfilosofie en visuele communicatie."
+      ]
     },
     "year": "2022",
+    "tags": {
+      "medium": {
+        "title": {
+          "en": "Print",
+          "nl": "Print"
+        },
+        "items": [
+          {
+            "en": "Poster",
+            "nl": "Poster"
+          }
+        ]
+      },
+      "design": {
+        "title": {
+          "en": "Design",
+          "nl": "Ontwerp"
+        },
+        "items": [
+          {
+            "en": "Graphic Design",
+            "nl": "Grafisch Ontwerp"
+          },
+          {
+            "en": "Typography",
+            "nl": "Typografie"
+          },
+          {
+            "en": "Exhibition",
+            "nl": "Tentoonstelling"
+          }
+        ]
+      }
+    },
     "content": [
       {
         "type": "image",
@@ -534,10 +790,46 @@
       "ARCHETYPE"
     ],
     "description": {
-      "en": "Booklet for cataloging textual information",
-      "nl": "Boekje voor het catalogiseren van tekstuele informatie"
+      "en": [
+        "Editorial booklet exploring hierarchy and classification of textual information.",
+        "The project focuses on clarity through typography and information design."
+      ],
+      "nl": [
+        "Redactioneel boekje over hiërarchie en classificatie van tekstuele informatie.",
+        "Het project focust op helderheid via typografie en informatieontwerp."
+      ]
     },
     "year": "2022",
+    "tags": {
+      "medium": {
+        "title": {
+          "en": "Print",
+          "nl": "Print"
+        },
+        "items": [
+          {
+            "en": "Booklet",
+            "nl": "Boekje"
+          }
+        ]
+      },
+      "design": {
+        "title": {
+          "en": "Design",
+          "nl": "Ontwerp"
+        },
+        "items": [
+          {
+            "en": "Book Design",
+            "nl": "Boekontwerp"
+          },
+          {
+            "en": "Typography",
+            "nl": "Typografie"
+          }
+        ]
+      }
+    },
     "content": [
       {
         "type": "image",
@@ -573,26 +865,69 @@
     "title": "PHONETIC ALPHABET ARCHIVE",
     "cover": "/images/phoneticalphabet/PAA_hero.webp",
     "titleLines": [
-      "PHONETIC ALPHABET",
+      "PHONETIC",
+      "ALPHABET",
       "ARCHIVE"
     ],
     "description": {
-      "en": "Digitalization of EOPA",
-      "nl": "Digitalisering van EOPA"
+      "en": [
+        "This project translates my master's thesis into an interactive digital archive. The website serves as a comprehensive reference for phonetic alphabets, bringing together historical research, typography, and linguistics in a searchable online environment.",
+        "Users can browse complete alphabets, examine individual letterforms, compare graphemes across writing systems, and explore the principles of phonetics through a structured information architecture.",
+        "The project demonstrates how digital media can extend editorial design, transforming a static publication into an accessible, expandable research platform."
+      ],
+      "nl": [
+        "Dit project vertaalt mijn masterproef naar een interactief digitaal archief. De website fungeert als een uitgebreid naslagwerk over fonetische alfabetten en brengt historisch onderzoek, typografie en taalkunde samen in een doorzoekbare online omgeving.",
+        "Gebruikers kunnen volledige alfabetten verkennen, individuele lettervormen bestuderen, grafemen tussen verschillende schriftsystemen vergelijken en de principes van de fonetiek ontdekken via een overzichtelijke informatiearchitectuur.",
+        "Het project toont hoe digitale media redactioneel ontwerp kunnen uitbreiden door een statische publicatie te transformeren tot een toegankelijk en uitbreidbaar onderzoeksplatform."
+      ]
     },
     "year": "2026",
     "link": {
       "href": "https://phoneticalphabetarchive.netlify.app",
       "label": {
-        "en": "Go to website",
-        "nl": "Naar de website"
+        "en": "Website",
+        "nl": "Website"
       }
     },
     "git": {
       "href": "https://github.com/GielBoogaertsPXL/phoneticalphabetarchive",
       "label": {
-        "en": "Go to repository",
-        "nl": "Naar de repository"
+        "en": "Git Respository",
+        "nl": "Git Respository"
+      }
+    },
+    "tags": {
+      "medium": {
+        "title": {
+          "en": "Development",
+          "nl": "Development"
+        },
+        "items": [
+          {
+            "en": "Vue.js",
+            "nl": "Vue.js"
+          },
+          {
+            "en": "Website",
+            "nl": "Website"
+          }
+        ]
+      },
+      "design": {
+        "title": {
+          "en": "Design",
+          "nl": "Ontwerp"
+        },
+        "items": [
+          {
+            "en": "UI Design",
+            "nl": "UI Design"
+          },
+          {
+            "en": "Typography",
+            "nl": "Typografie"
+          }
+        ]
       }
     },
     "content": [
@@ -684,22 +1019,70 @@
       "IMMOHABITS"
     ],
     "description": {
-      "en": "Rebranding of ImmoHabits",
-      "nl": "Rebranding van ImmoHabits"
+      "en": [
+        "Collaborative rebranding and web development project for a real estate platform.",
+        "My contribution focused on interface design and front-end development."
+      ],
+      "nl": [
+        "Gezamenlijk rebranding- en webontwikkelingsproject voor een vastgoedplatform.",
+        "Mijn bijdrage lag bij interfaceontwerp en front-end development."
+      ]
     },
     "year": "2026",
     "link": {
       "href": "https://immohabits09.netlify.app",
       "label": {
-        "en": "Go to website",
-        "nl": "Naar de website"
+        "en": "Website",
+        "nl": "Website"
       }
     },
     "git": {
       "href": "https://github.com/GielBoogaertsPXL/immohabits",
       "label": {
-        "en": "Go to repository",
-        "nl": "Naar de repository"
+        "en": "Git Respository",
+        "nl": "Git Respository"
+      }
+    },
+    "tags": {
+      "medium": {
+        "title": {
+          "en": "Development",
+          "nl": "Development"
+        },
+        "items": [
+          {
+            "en": "Vue.js",
+            "nl": "Vue.js"
+          },
+          {
+            "en": "Website",
+            "nl": "Website"
+          },
+          {
+            "en": "Dashboard",
+            "nl": "Dashboard"
+          }
+        ]
+      },
+      "design": {
+        "title": {
+          "en": "Design",
+          "nl": "Ontwerp"
+        },
+        "items": [
+          {
+            "en": "UI Design",
+            "nl": "UI Design"
+          },
+          {
+            "en": "Branding",
+            "nl": "Huisstijl"
+          },
+          {
+            "en": "Group Project",
+            "nl": "Groepsproject"
+          }
+        ]
       }
     },
     "content": [
@@ -768,10 +1151,46 @@
       "HYBRID PUBLISHING"
     ],
     "description": {
-      "en": "Collaboration with Senne Houben",
-      "nl": "Samenwerking met Senne Houben"
+      "en": [
+        "Collaborative publication with photographer Senne Houben.",
+        "The book experiments with hybrid editorial structures and two reading directions."
+      ],
+      "nl": [
+        "Gezamenlijke publicatie met fotograaf Senne Houben.",
+        "Het boek experimenteert met hybride redactionele structuren en twee leesrichtingen."
+      ]
     },
     "year": "2026",
+    "tags": {
+      "medium": {
+        "title": {
+          "en": "Print",
+          "nl": "Print"
+        },
+        "items": [
+          {
+            "en": "Book",
+            "nl": "Boek"
+          }
+        ]
+      },
+      "design": {
+        "title": {
+          "en": "Design",
+          "nl": "Ontwerp"
+        },
+        "items": [
+          {
+            "en": "Book Design",
+            "nl": "Boekontwerp"
+          },
+          {
+            "en": "Photography",
+            "nl": "Fotografie"
+          }
+        ]
+      }
+    },
     "content": [
       {
         "type": "image",
@@ -874,18 +1293,54 @@
       "PASTERS"
     ],
     "description": {
-      "en": "Typographical posters expanding from EOPA",
-      "nl": "Typografische posters als uitbreiding van EOPA"
+      "en": [
+        "Series of typographic posters based on my research into phonetic alphabets.",
+        "The designs translate linguistic information into visual compositions."
+      ],
+      "nl": [
+        "Reeks typografische posters gebaseerd op mijn onderzoek naar fonetische alfabetten.",
+        "De ontwerpen vertalen taalkundige informatie naar visuele composities."
+      ]
     },
     "year": "2026",
+    "tags": {
+      "medium": {
+        "title": {
+          "en": "Print",
+          "nl": "Print"
+        },
+        "items": [
+          {
+            "en": "Poster",
+            "nl": "Poster"
+          }
+        ]
+      },
+      "design": {
+        "title": {
+          "en": "Design",
+          "nl": "Ontwerp"
+        },
+        "items": [
+          {
+            "en": "Graphic Design",
+            "nl": "Grafisch Ontwerp"
+          },
+          {
+            "en": "Typography",
+            "nl": "Typografie"
+          }
+        ]
+      }
+    },
     "content": [
       {
         "type": "image",
         "src": "/images/pasters/PASTER_hero.webp",
         "position": "first",
         "alt": {
-          "en": "Book cover",
-          "nl": "Boek cover"
+          "en": "Pasters hero",
+          "nl": "Pasters hero"
         }
       },
       {
@@ -893,8 +1348,8 @@
         "src": "/images/pasters/PASTER_1.webp",
         "position": "second",
         "alt": {
-          "en": "Book spread",
-          "nl": "Boek spread"
+          "en": "Pasters poster 1",
+          "nl": "Pasters poster 1"
         }
       },
       {
@@ -902,8 +1357,8 @@
         "src": "/images/pasters/PASTER_2.webp",
         "position": "third",
         "alt": {
-          "en": "Book spread",
-          "nl": "Boek spread"
+          "en": "Pasters poster 2",
+          "nl": "Pasters poster 2"
         }
       },
       {
@@ -911,8 +1366,8 @@
         "src": "/images/pasters/PASTER_3.webp",
         "position": "fourth",
         "alt": {
-          "en": "Book spread",
-          "nl": "Boek spread"
+          "en": "Pasters poster 3",
+          "nl": "Pasters poster 3"
         }
       }
     ]
