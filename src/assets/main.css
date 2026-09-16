@@ -62,7 +62,7 @@ a.no-underline::after {
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 550px) {
   :root {
     --headline: 700 10vw/calc(1em) var(--typeface), sans-serif;
     --header-2: 700 1.5rem/25px var(--typeface), sans-serif;

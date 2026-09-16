@@ -1,12 +1,21 @@
 <script setup>
 import { useI18n } from 'vue-i18n'
 import projects from '@/projects/projects.json'
+import { useScrollReveal } from '/scripts/useScrollReveal'
 
 const { t } = useI18n()
 
 const projectMap = Object.fromEntries(
     projects.map(p => [p.id, p])
 )
+
+const { el: el1, visible: v1 } = useScrollReveal()
+const { el: el2, visible: v2 } = useScrollReveal()
+const { el: el3, visible: v3 } = useScrollReveal()
+const { el: el4, visible: v4 } = useScrollReveal()
+const { el: el5, visible: v5 } = useScrollReveal()
+const { el: el6, visible: v6 } = useScrollReveal()
+const { el: el7, visible: v7 } = useScrollReveal()
 </script>
 
 <template>
@@ -14,7 +23,7 @@ const projectMap = Object.fromEntries(
     <h1>{{ t('work.title') }}</h1>
 
     <section>
-      <div class="first">
+      <div class="first scroll-item" ref="el1" :class="{ visible: v1 }">
         <RouterLink :to="`/work/${projectMap.microtype.id}`">
           <img :src="projectMap.microtype.cover" />
           <div class="text">
@@ -22,7 +31,6 @@ const projectMap = Object.fromEntries(
             <span>{{ projectMap.microtype.year }}</span>
           </div>
         </RouterLink>
-
         <RouterLink :to="`/work/${projectMap.jumbledscript.id}`">
           <img :src="projectMap.jumbledscript.cover" />
           <div class="text">
@@ -32,7 +40,7 @@ const projectMap = Object.fromEntries(
         </RouterLink>
       </div>
 
-      <div class="second">
+      <div class="second scroll-item" ref="el2" :class="{ visible: v2 }">
         <RouterLink :to="`/work/${projectMap.eopa.id}`">
           <img id="eopa" :src="projectMap.eopa.cover" />
           <div class="text">
@@ -42,7 +50,7 @@ const projectMap = Object.fromEntries(
         </RouterLink>
       </div>
 
-      <div class="third">
+      <div class="third scroll-item" ref="el3" :class="{ visible: v3 }">
         <RouterLink :to="`/work/${projectMap.typeinterplay.id}`">
           <img :src="projectMap.typeinterplay.cover" />
           <div class="text">
@@ -50,7 +58,6 @@ const projectMap = Object.fromEntries(
             <span>{{ projectMap.typeinterplay.year }}</span>
           </div>
         </RouterLink>
-
         <RouterLink :to="`/work/${projectMap.virgajesse.id}`">
           <img :src="projectMap.virgajesse.cover" />
           <div class="text">
@@ -60,7 +67,7 @@ const projectMap = Object.fromEntries(
         </RouterLink>
       </div>
 
-      <div class="fourth">
+      <div class="fourth scroll-item" ref="el4" :class="{ visible: v4 }">
         <RouterLink :to="`/work/${projectMap.enzomari.id}`">
           <img :src="projectMap.enzomari.cover" />
           <div class="text">
@@ -68,7 +75,6 @@ const projectMap = Object.fromEntries(
             <span>{{ projectMap.enzomari.year }}</span>
           </div>
         </RouterLink>
-
         <RouterLink :to="`/work/${projectMap.archetype.id}`">
           <img :src="projectMap.archetype.cover" />
           <div class="text">
@@ -78,7 +84,7 @@ const projectMap = Object.fromEntries(
         </RouterLink>
       </div>
 
-      <div class="fifth">
+      <div class="fifth scroll-item" ref="el5" :class="{ visible: v5 }">
         <RouterLink :to="`/work/${projectMap.phoneticalphabet.id}`">
           <img :src="projectMap.phoneticalphabet.cover" />
           <div class="text">
@@ -88,7 +94,7 @@ const projectMap = Object.fromEntries(
         </RouterLink>
       </div>
 
-      <div class="third">
+      <div class="third scroll-item" ref="el6" :class="{ visible: v6 }">
         <RouterLink :to="`/work/${projectMap.immohabits.id}`">
           <img :src="projectMap.immohabits.cover" />
           <div class="text">
@@ -96,8 +102,6 @@ const projectMap = Object.fromEntries(
             <span>{{ projectMap.immohabits.year }}</span>
           </div>
         </RouterLink>
-
-
         <RouterLink :to="`/work/${projectMap.hybridpublishing.id}`">
           <img :src="projectMap.hybridpublishing.cover" />
           <div class="text">
@@ -107,7 +111,7 @@ const projectMap = Object.fromEntries(
         </RouterLink>
       </div>
 
-      <div class="first">
+      <div class="first scroll-item" ref="el7" :class="{ visible: v7 }">
         <RouterLink :to="`/work/${projectMap.pasters.id}`">
           <img :src="projectMap.pasters.cover" />
           <div class="text">
@@ -215,6 +219,15 @@ section {
   width: 100%;
 }
 
+.scroll-item {
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+
+.scroll-item.visible {
+  opacity: 1;
+}
+
 @media screen and (max-width: 550px) {
   .first {
     flex-direction: column;
@@ -227,7 +240,7 @@ section {
   }
 
   #eopa {
-    content:url("/images/eopa/EOPA_hero_vertical.webp");
+    content: url("/images/eopa/EOPA_hero_vertical.webp");
   }
 
   .third {

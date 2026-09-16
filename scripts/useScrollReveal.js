@@ -13,7 +13,7 @@ export function useScrollReveal() {
           observer.disconnect()
         }
       },
-      { threshold: 0.25 }
+      { threshold: 0.20 }
     )
     if (el.value) observer.observe(el.value)
   })

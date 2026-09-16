@@ -61,11 +61,11 @@ h1 {
 section {
   display: flex;
   flex-direction: column;
-  gap: 20vw;
+  gap: 30vw;
   align-items: center;
   text-align: center;
   width: 100%;
-  padding-top: 3rem;
+  padding: 3rem 0;
 }
 
 p, div {
@@ -74,7 +74,7 @@ p, div {
 }
 
 p {
-  width: 60%;
+  width: 65%;
 }
 
 span {
@@ -146,10 +146,64 @@ span {
   margin-left: 35%;
 }
 
-@media screen and (max-width: 700px) {
-  section {
-    padding-top: 0;
+@media screen and (max-width: 1000px) {
+ .keyword {
+   font-size: 10vw;
+   width: 100%;
+ }
+
+  .keyword:nth-child(2) {
+    margin-left: 15%;
   }
 
+  .keyword:nth-child(4) {
+    margin-left: 6%;
+  }
+
+  .keyword:nth-child(5) {
+    margin-left: 57%;
+  }
+
+  .keyword:nth-child(6) {
+    margin-left: 0;
+  }
+
+  .keyword:nth-child(7) {
+    margin-left: 10%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .keyword {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  section {
+    gap: 15rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .keyword:nth-child(2) {
+    margin-left: 5%;
+  }
+
+  .keyword:nth-child(4) {
+    margin-left: -3%;
+  }
+
+  .keyword:nth-child(5) {
+    margin-left: 50%;
+  }
+
+  .keyword:nth-child(6) {
+    margin-left: 0;
+  }
+
+  .keyword:nth-child(7) {
+    margin-left: 10%;
+  }
 }
 </style>

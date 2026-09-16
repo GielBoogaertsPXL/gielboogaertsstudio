@@ -14,6 +14,12 @@ export default {
     skill1: 'Grafisch,',
     skill2: 'Boek-',
     skill3: '& Webdesign',
+    work: 'Bekijk al het werk',
+    introduction1: 'Zelfstandig grafisch vormgever uit België, gespecialiseerd in ',
+    introduction2: 'visuele identiteiten, ',
+    introduction3: 'boekontwerp ',
+    introduction4: '& ',
+    introduction5: 'webdesign.',
   },
   about: {
     title: 'OVER',

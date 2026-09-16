@@ -47,9 +47,6 @@ onUnmounted(() => {
         <a href="https://www.linkedin.com/in/giel-boogaerts-581b96224/" target="_blank">LinkedIn</a>
         <a href="https://github.com/GielBoogaertsPXL" target="_blank">Github</a>
       </div>
-      <div class="privacyPolicy">
-        <a href="/privacyPolicy.pdf" download>{{ t('footer.privacy') }}</a>
-      </div>
       <div class="filler"></div>
     </div>
     <h1 ref="text">GIEL BOOGAERTS STUDIO</h1>

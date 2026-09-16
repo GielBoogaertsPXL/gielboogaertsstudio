@@ -14,6 +14,12 @@ export default {
     skill1: 'Graphic-,',
     skill2: 'Book-',
     skill3: '& Webdesign',
+    work: 'View all work',
+    introduction1: 'Independent graphic designer based in Belgium, creating ',
+    introduction2: 'visual identities, ',
+    introduction3: 'editorial design ',
+    introduction4: '& ',
+    introduction5: 'digital experiences.',
   },
   about: {
     title: 'ABOUT',
