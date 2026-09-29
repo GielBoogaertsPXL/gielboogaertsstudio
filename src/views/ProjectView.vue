@@ -15,11 +15,15 @@ const project = computed(() =>
 )
 
 const prevProject = computed(() =>
-    projects[(currentIndex.value - 1 + projects.length) % projects.length]
+    currentIndex.value !== -1
+        ? projects[(currentIndex.value - 1 + projects.length) % projects.length]
+        : null
 )
 
 const nextProject = computed(() =>
-    projects[(currentIndex.value + 1) % projects.length]
+    currentIndex.value !== -1
+        ? projects[(currentIndex.value + 1) % projects.length]
+        : null
 )
 </script>
 
@@ -30,6 +34,4 @@ const nextProject = computed(() =>
       :prev="prevProject"
       :next="nextProject"
   />
-
-  <div v-else>Project not found</div>
 </template>

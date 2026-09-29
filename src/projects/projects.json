@@ -69,7 +69,7 @@
         ]
       }
     },
-    "content": [
+    "media": [
       {
         "type": "image",
         "src": "/images/microtype/MT_hero.webp",
@@ -194,7 +194,7 @@
         ]
       }
     },
-    "content": [
+    "media": [
       {
         "type": "image",
         "src": "/images/jumbledscript/JS_hero.webp",
@@ -274,9 +274,12 @@
     "title": "ENCYCLOPEDIA OF PHONETIC ALPHABETS",
     "cover": "/images/eopa/EOPA_hero.webp",
     "titleLines": [
-      "ENCYCLOPEDIA OF",
-      "PHONETIC ALPHABETS"
+      "ENCYCLOPEDIA OF PHONETIC ALPHABETS"
     ],
+    "video": {
+      "mp4": "/images/eopa/EOPA_video.mp4",
+      "webm": "/images/eopa/EOPA_video.webm"
+    },
     "description": {
       "en": [
         "EOPA is my master's project investigating phonetic alphabets. It brings together a collection of 51 different phonetic alphabets and more than 3,700 individual graphemes. The project combines editorial design, typography and research in a three-part book series.",
@@ -343,7 +346,7 @@
         ]
       }
     },
-    "content": [
+    "media": [
       {
         "type": "image",
         "src": "/images/eopa/EOPA_hero.webp",
@@ -399,9 +402,17 @@
         }
       },
       {
+        "type": "video",
+        "sources": {
+          "mp4": "/images/eopa/COC_video.mp4",
+          "webm": "/images/eopa/COC_video.webm"
+        },
+        "position": "second"
+      },
+      {
         "type": "image",
         "src": "/images/eopa/COC_cover.webp",
-        "position": "second",
+        "position": "third",
         "alt": {
           "en": "Catalogue of Characters cover",
           "nl": "Catalogus van Tekens omslag"
@@ -410,7 +421,7 @@
       {
         "type": "image",
         "src": "/images/eopa/COC_content.webp",
-        "position": "third",
+        "position": "fourth",
         "alt": {
           "en": "Catalogue of Characters content page",
           "nl": "Catalogus van Tekens inhoudspagina"
@@ -419,16 +430,24 @@
       {
         "type": "image",
         "src": "/images/eopa/COC_spread.webp",
-        "position": "fourth",
+        "position": "fifth",
         "alt": {
           "en": "Catalogue of Characters spread",
           "nl": "Catalogus van Tekens spread"
         }
       },
       {
+        "type": "video",
+        "sources": {
+          "mp4": "/images/eopa/COV_video.mp4",
+          "webm": "/images/eopa/COV_video.webm"
+        },
+        "position": "first"
+      },
+      {
         "type": "image",
         "src": "/images/eopa/COV_cover.webp",
-        "position": "fifth",
+        "position": "second",
         "alt": {
           "en": "Catalogue of Voices cover",
           "nl": "Catalogus van Stemmen omslag"
@@ -437,7 +456,7 @@
       {
         "type": "image",
         "src": "/images/eopa/COV_content.webp",
-        "position": "first",
+        "position": "third",
         "alt": {
           "en": "Catalogue of Voices content page",
           "nl": "Catalogus van Stemmen inhoudspagina"
@@ -446,7 +465,7 @@
       {
         "type": "image",
         "src": "/images/eopa/COV_spread.webp",
-        "position": "second",
+        "position": "fourth",
         "alt": {
           "en": "Catalogue of Voices spread",
           "nl": "Catalogus van Stemmen spread"
@@ -459,8 +478,7 @@
     "title": "TYPE-INTER-PLAY",
     "cover": "/images/typeinterplay/TIP_hero.webp",
     "titleLines": [
-      "TYPE-INTER-",
-      "PLAY"
+      "TYPE-INTER-PLAY"
     ],
     "video": {
       "mp4": "/images/typeinterplay/TIP_video.mp4",
@@ -519,7 +537,7 @@
         ]
       }
     },
-    "content": [
+    "media": [
       {
         "type": "image",
         "src": "/images/typeinterplay/TIP_hero.webp",
@@ -657,7 +675,7 @@
         ]
       }
     },
-    "content": [
+    "media": [
       {
         "type": "image",
         "src": "/images/virgajesse/VG_hero.webp",
@@ -759,7 +777,7 @@
         ]
       }
     },
-    "content": [
+    "media": [
       {
         "type": "image",
         "src": "/images/enzomari/EM_poster1.webp",
@@ -867,7 +885,7 @@
         ]
       }
     },
-    "content": [
+    "media": [
       {
         "type": "image",
         "src": "/images/archetype/ARCH_hero.webp",
@@ -902,9 +920,7 @@
     "title": "PHONETIC ALPHABET ARCHIVE",
     "cover": "/images/phoneticalphabet/PAA_hero.webp",
     "titleLines": [
-      "PHONETIC",
-      "ALPHABET",
-      "ARCHIVE"
+      "PHONETIC ALPHABET ARCHIVE"
     ],
     "description": {
       "en": [
@@ -971,7 +987,7 @@
         ]
       }
     },
-    "content": [
+    "media": [
       {
         "type": "image",
         "src": "/images/phoneticalphabet/PAA_hero.webp",
@@ -1115,7 +1131,7 @@
         ]
       }
     },
-    "content": [
+    "media": [
       {
         "type": "image",
         "src": "/images/immohabits/IH_home1.webp",
@@ -1177,7 +1193,8 @@
     "description": {
       "en": [
         "Collaborative publication with concert photographer Senne Houben, created as part of the graduation project for 'Book & Type'. The book explores hybrid editorial structures and two reading directions, drawing its concept from music records and concert photography.",
-        "Readable from both directions, the book presents the top three images for each artist when read from front to back, evoking the energy and immediacy of music and live performance. In reverse, it reveals contextual material, including a quote from Senne, the setlist of the respective concert, and a contact sheet of all photographs. This alternating structure creates a dynamic reading experience while also introducing moments of visual calm."
+        "Readable from both directions, the book presents the top three images for each artist when read from front to back, evoking the energy and immediacy of music and live performance.",
+        "In reverse, it reveals contextual material, including a quote from Senne, the setlist of the respective concert, and a contact sheet of all photographs. This alternating structure creates a dynamic reading experience while also introducing moments of visual calm."
       ],
       "nl": [
         "Gezamenlijke publicatie met concertfotograaf Senne Houben, gemaakt als onderdeel van het afstudeerproject voor 'Book & Type'. Het boek onderzoekt hybride redactionele structuren en twee leesrichtingen, waarbij het concept is gebaseerd op muziekalbums en concertfotografie.",
@@ -1227,7 +1244,7 @@
         ]
       }
     },
-    "content": [
+    "media": [
       {
         "type": "image",
         "src": "/images/hybridpublishing/HP_hero.webp",
@@ -1361,7 +1378,7 @@
         ]
       }
     },
-    "content": [
+    "media": [
       {
         "type": "image",
         "src": "/images/pasters/PASTER_hero.webp",
