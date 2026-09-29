@@ -9,7 +9,7 @@
     </header>
     <section>
       <p>Hey, ik ben Giel Boogaerts — <span>Grafisch Vormgever</span> & <span>student Digitale Vormgeving</span>, met een focus op
-        front-end development aan PXL in België</p>
+        front-end development aan PXL</p>
       <img src="/photo.webp" alt="">
       <p>Ik ben op zoek naar een <span>stageplek</span> dit schooljaar voor de periode van <span>nov - jan</span>
       </p>

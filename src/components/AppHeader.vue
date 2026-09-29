@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
 import { useI18n } from "vue-i18n";
 import { useHeroStore } from '@/stores/useHeroStore'
 import { useRoute } from 'vue-router'
@@ -9,6 +9,8 @@ const heroStore = useHeroStore()
 
 const menuOpen = ref(false)
 const langOpen = ref(false)
+const themeOpen = ref(false)
+const isDark = ref(false)
 const { locale, t } = useI18n()
 
 function toggleMenu() {
@@ -25,8 +27,39 @@ function setLang(lang) {
   locale.value = lang
   localStorage.setItem('locale', lang)
   langOpen.value = false
-  closeMenu();
+  closeMenu()
 }
+
+function setTheme(theme) {
+  isDark.value = theme === 'dark'
+  document.documentElement.setAttribute('data-theme', theme)
+  localStorage.setItem('theme', theme)
+  themeOpen.value = false
+  closeMenu()
+}
+
+function toggleLangPopup() {
+  langOpen.value = !langOpen.value
+  if (langOpen.value) themeOpen.value = false
+}
+
+function toggleThemePopup() {
+  themeOpen.value = !themeOpen.value
+  if (themeOpen.value) langOpen.value = false
+}
+
+onMounted(() => {
+  const savedTheme = localStorage.getItem('theme')
+  const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+
+  if (savedTheme === 'dark' || (!savedTheme && systemPrefersDark)) {
+    isDark.value = true
+    document.documentElement.setAttribute('data-theme', 'dark')
+  } else {
+    isDark.value = false
+    document.documentElement.setAttribute('data-theme', 'light')
+  }
+})
 </script>
 
 <template>
@@ -50,16 +83,30 @@ function setLang(lang) {
           <RouterLink :to="{ name: 'about' }" @click="closeMenu">{{ t('nav.about') }}</RouterLink>
         </nav>
 
-        <div class="lang-wrapper">
-          <button class="lang-btn" @click="langOpen = !langOpen">
-            {{ locale.toUpperCase() }}
-          </button>
-          <Transition name="popup">
-            <div class="lang-popup" v-if="langOpen">
-              <button v-if="locale !== 'en'" @click="setLang('en')">EN</button>
-              <button v-if="locale !== 'nl'" @click="setLang('nl')">NL</button>
-            </div>
-          </Transition>
+        <div class="overlay-actions">
+          <div class="theme-wrapper">
+            <button class="theme-btn" @click="toggleThemePopup">
+              {{ isDark ? 'DARK' : 'LIGHT' }}
+            </button>
+            <Transition name="popup">
+              <div class="theme-popup" v-if="themeOpen">
+                <button v-if="!isDark" @click="setTheme('dark')">DARK</button>
+                <button v-if="isDark" @click="setTheme('light')">LIGHT</button>
+              </div>
+            </Transition>
+          </div>
+
+          <div class="lang-wrapper">
+            <button class="lang-btn" @click="toggleLangPopup">
+              {{ locale.toUpperCase() }}
+            </button>
+            <Transition name="popup">
+              <div class="lang-popup" v-if="langOpen">
+                <button v-if="locale !== 'en'" @click="setLang('en')">EN</button>
+                <button v-if="locale !== 'nl'" @click="setLang('nl')">NL</button>
+              </div>
+            </Transition>
+          </div>
         </div>
       </div>
     </Transition>
@@ -92,7 +139,7 @@ nav a {
 
 .menu-btn span {
   font: var(--header-2);
-  mix-blend-mode: screen;
+  mix-blend-mode: difference;
 }
 
 .menu-btn.white {
@@ -100,16 +147,17 @@ nav a {
 }
 
 .menu-btn.active {
-  color: black;
+  color: var(--dark-color);
 }
 
 .overlay {
   position: fixed;
   inset: 0;
-  background: white;
+  background: var(--light-color);
   z-index: 150;
   display: flex;
   justify-content: space-between;
+  transition: background-color 0.3s ease;
 }
 
 nav {
@@ -120,38 +168,55 @@ nav {
   justify-content: center;
 }
 
-.lang-wrapper {
-  margin-right: 1rem;
-  margin-bottom: 1rem;
+.overlay-actions {
+  position: absolute;
+  width: 100%;
+  padding: 1rem 1rem;
   align-self: flex-end;
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.theme-wrapper,
+.lang-wrapper {
   position: relative;
 }
 
+.theme-btn,
 .lang-btn {
   background: none;
   border: none;
   font: var(--headline);
   cursor: pointer;
+  color: var(--dark-color);
+  font-weight: lighter;
 }
 
+.theme-popup,
 .lang-popup {
   position: absolute;
   bottom: 100%;
-  right: 0;
+  left: 0; /* Align left edge with parent button */
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: flex-start; /* Left-align the options */
   margin-bottom: 0.5rem;
 }
 
+.theme-popup button,
 .lang-popup button {
   background: none;
   border: none;
   font: var(--headline);
   cursor: pointer;
   opacity: 0.3;
+  color: var(--dark-color);
+  text-align: left;
+  font-weight: lighter;
 }
 
+.theme-popup button.active,
 .lang-popup button.active {
   opacity: 1;
 }

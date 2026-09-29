@@ -3,7 +3,7 @@ import { RouterView } from "vue-router";
 import AppHeader from "@/components/AppHeader.vue";
 import AppFooter from "@/components/AppFooter.vue";
 import AppTag from "@/components/AppTag.vue";
-import { ref, onMounted, computed } from "vue";
+import { ref, onMounted, computed, onUnmounted } from "vue";
 import { useI18n } from "vue-i18n";
 import { useHead } from '@unhead/vue'
 
@@ -16,13 +16,18 @@ useHead({
 })
 
 const ready = ref(false)
+
 onMounted(() => {
   document.body.style.overflow = 'hidden'
+  // Add loading class so CSS can style the background specifically during load
+  document.documentElement.classList.add('is-loading')
 
   const reveal = () => {
     setTimeout(() => {
       ready.value = true
       document.body.style.overflow = ''
+      // Remove loading class when content loads
+      document.documentElement.classList.remove('is-loading')
     }, 2500)
   }
 
@@ -32,10 +37,15 @@ onMounted(() => {
     window.addEventListener('load', reveal, { once: true })
   }
 })
+
+onUnmounted(() => {
+  document.documentElement.classList.remove('is-loading')
+})
 </script>
 
 <template>
   <div id="app">
+    <!-- AppTag stays outside #content to render immediately -->
     <AppTag />
     <div id="content" :class="{ visible: ready }">
       <AppHeader />
@@ -55,6 +65,7 @@ onMounted(() => {
 }
 
 #content {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   gap: 10rem;
