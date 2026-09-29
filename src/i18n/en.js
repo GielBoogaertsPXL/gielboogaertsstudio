@@ -44,6 +44,8 @@ export default {
     back: '← Back',
     prev: '← Previous',
     next: 'Next →',
-    not_found: 'Project not found',
+    not_found: 'Page not found',
+    not_found_message: 'Nothing to see here...',
+    not_found_button: 'Home',
   },
 }

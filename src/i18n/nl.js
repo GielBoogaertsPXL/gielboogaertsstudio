@@ -44,6 +44,8 @@ export default {
     back: '← Terug',
     prev: '← Vorige',
     next: 'Volgende →',
-    not_found: 'Project niet gevonden',
+    not_found: 'Pagina niet gevonden',
+    not_found_message: 'Niks te zien hier...',
+    not_found_button: 'Home',
   },
 }
